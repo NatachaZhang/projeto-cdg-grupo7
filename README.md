@@ -17,15 +17,14 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 * **`requirements.txt`**: Ficheiro de configuração com as bibliotecas necessárias.
 ## 1. Iniciação (Milestone 1)
 ### Contexto e Problema de Negócio
-[Descreve o problema que pretendem resolver. Qual é o desafio da empresa ou organização?]
 Estimar o valor de mercado de um imóvel com base em localização, área e
 características.
 ### Objetivos do Projeto
 * **Objetivo 1:** [Ex: Prever a rotatividade de clientes]
 * **Objetivo 2:** [Ex: Identificar os principais fatores de influência]
 ### Fonte de Dados
-* **Dataset:** [https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data]
-* **Dimensão:** [506 linhas, 14 colunas]
+* **Dataset:** https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data
+* **Dimensão:** 506 linhas, 14 colunas
 ## 2. Exploração (Milestone 2)
 ### Limpeza e Preparação
 * [Breve resumo das ações de limpeza tomadas. Detalhes em `docs/M2_exploracao.md`]
