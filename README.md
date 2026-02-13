@@ -18,6 +18,8 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 ## 1. Iniciação (Milestone 1)
 ### Contexto e Problema de Negócio
 [Descreve o problema que pretendem resolver. Qual é o desafio da empresa ou organização?]
+Estimar o valor de mercado de um imóvel com base em localização, área e
+características.
 ### Objetivos do Projeto
 * **Objetivo 1:** [Ex: Prever a rotatividade de clientes]
 * **Objetivo 2:** [Ex: Identificar os principais fatores de influência]
