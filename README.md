@@ -22,8 +22,8 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 * **Objetivo 1:** [Ex: Prever a rotatividade de clientes]
 * **Objetivo 2:** [Ex: Identificar os principais fatores de influência]
 ### Fonte de Dados
-* **Dataset:** [Link para a fonte ou descrição dos ficheiros]
-* **Dimensão:** [Ex: 10.000 linhas, 15 colunas]
+* **Dataset:** [https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data]
+* **Dimensão:** [506 linhas, 14 colunas]
 ## 2. Exploração (Milestone 2)
 ### Limpeza e Preparação
 * [Breve resumo das ações de limpeza tomadas. Detalhes em `docs/M2_exploracao.md`]
