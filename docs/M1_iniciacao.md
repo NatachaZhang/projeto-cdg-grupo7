@@ -13,8 +13,7 @@ clustering.]
  * **Diana Figueiredo:** Responsável pela Engenharia de Dados.
  * **Natacha Zhang:** Responsável pela Modelação Estatística.
  * **Sofia Tanganho:** Responsável pela Visualização e Documentação.
-* **Ferramentas de Colaboração:** [Ex: GitHub Projects para Kanban, reuniões semanais via
-Teams/Discord].
+* **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
 ## 4. Análise de Viabilidade dos Dados
 * **Disponibilidade:** [Os dados já foram descarregados? Estão em base de dados?]
 * **Qualidade Inicial:** [Ex: Notámos que faltam dados de datas em algumas colunas, precisaremos
