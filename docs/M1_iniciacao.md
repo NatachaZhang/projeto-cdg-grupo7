@@ -1,7 +1,7 @@
 # Milestone 1: Iniciação e Definição do Projeto
 ## 1. Descrição Detalhada do Problema
-[Expandir a descrição do README. Explicar o contexto do setor (ex: retalho, banca, saúde) e
-porque é que este problema é relevante no momento atual.]
+Este projeto insere-se no setor imobiliário, onde o preço de um imóvel depende de múltiplos fatores tais como, localização, condições socioeconómicas da zona, qualidade do ambiente, acessos, e características físicas (ex.: número de divisões, idade do imóvel, etc.).
+Atualmente entidades como agências imobiliárias, bancos (crédito habitação), seguradoras, investidores e plataformas digitais precisam de estimativas consistentes para suportar decisões rápidas e reduzir risco.
 ## 2. Objetivos SMART
 *Defina os objetivos do projeto seguindo a lógica SMART (Específico, Mensurável, Atingível,
 Relevante e Temporal):*
