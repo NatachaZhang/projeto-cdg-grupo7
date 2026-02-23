@@ -15,10 +15,9 @@ clustering.]
  * **Sofia Tanganho:** Responsável pela Visualização e Documentação.
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
 ## 4. Análise de Viabilidade dos Dados
-* **Disponibilidade:** [Os dados já foram descarregados? Estão em base de dados?]
-* **Qualidade Inicial:** [Ex: Notámos que faltam dados de datas em algumas colunas, precisaremos
-de tratar isso na M2.]
-* **Ética:** [Os dados cumprem o RGPD? Estão anonimizados?]
+* **Disponibilidade:** Os dados encontram-se descarregados e armazenados numa base de dados em formato CSV.
+* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existe valores nulos. Verificou-se que não existes observações duplicadas. A estrutura do dataset é consistente, apenas possui variáveis numéricas.
+* **Ética:** O dataset não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
 ## 5. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
 | :--- | :--- | :--- |
