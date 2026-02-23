@@ -20,8 +20,8 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 Estimar o valor de mercado de um imóvel com base em localização, área e
 características.
 ### Objetivos do Projeto
-* **Objetivo 1:** Identificar as 3 variáveis que mais influenciam o preço mediano das habitações (MEDV) através de análise de correlação e Feature Importance, e segmentar os 506 bairros em grupos distintos com K-Means validado por um Coeficiente de Silhueta superior a 0.50, até ao Milestone 2.
-* **Objetivo 2:** Comparar o desempenho de algoritmos de regressão na previsão do valor médio das habitações, selecionar o modelo com melhor RMSE e R^2 superior a 0.85, até ao Milestone 3.
+* **Objetivo 1:** Identificar as variáveis que mais influenciam o preço médio das habitações e agrupar as habitações em perfis distintos.
+* **Objetivo 2:** Testar diferentes algoritmos de regressão para prever o preço médio das habitações e selecionar o modelo mais adequado para apoiar as decisões baseadas nos dados.
 ### Fonte de Dados
 * **Dataset:** https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data
 * **Dimensão:** 506 linhas, 14 colunas
