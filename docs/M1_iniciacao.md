@@ -20,8 +20,7 @@ Relevante e Temporal):*
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
 ## 4. Análise de Viabilidade dos Dados
 * **Disponibilidade:** Os dados encontram-se descarregados e armazenados numa base de dados em formato CSV.
-* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O dataset apenas possui variáveis numéricas.Foi, no entanto, identificada uma inconsistência na formatação dos valores decimais, em que alguns valores utilizam o carácter 'h' (ex:19h30) em vez de um separador decimal padrão e que foi observada a presença de dois padrões distintos de separação décimal, nomeadamente o uso de ponto(.) e de vírgula(,).
-
+* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O dataset apenas possui variáveis numéricas. Foi, no entanto, identificada uma inconsistência na formatação dos valores decimais, em que alguns valores utilizam o carácter 'h' (ex:19h30) e o caractér ':' (ex: 16:00) em vez de um separador decimal padrão. Adicionalmente observou-se a presença de dois padrões distintos de separação décimal, nomeadamente o uso de ponto (.) e de vírgula (,).
 * **Ética:** O dataset não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
 ## 5. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
