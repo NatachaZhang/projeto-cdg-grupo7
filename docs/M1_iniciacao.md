@@ -8,8 +8,8 @@ Relevante e Temporal):*
 1. **Objetivo 1:** Identificar as 3 variáveis que mais influenciam o preço mediano das habitações (MEDV) através de análise de correlação e Feature Importance, e segmentar as 506 habitações em grupos distintos com K-Means validado por um Coeficiente de Silhueta superior a 0.50, até ao Milestone 2.
 2. **Objetivo 2:** Comparar o desempenho de algoritmos de regressão na previsão do valor médio das habitações, selecionar o modelo com melhor RMSE e R^2 superior a 0.85, até ao Milestone 3.
 ### Perguntas de Investigação
-1. A percentagem da populção de estatuto socioeconómico mais baixo (LSTAT) é o preditor mais forte do valor mediano das habitações (MEDV), superando variáveis físicas como o número de divisões (RM)?
-2. As zonas com maior taxa de criminilidade per capita (CRIM) estão associadas a valores de habitação significativamente mais baixos, independentemente de outras variáveis socioeconómicas?
+1. A percentagem da população de estatuto socioeconómico mais baixo (LSTAT) é o preditor mais forte do valor mediano das habitações (MEDV), superando variáveis físicas como o número de divisões (RM)?
+2. As zonas com maior taxa de criminalidade per capita (CRIM) estão associadas a valores de habitação significativamente mais baixos, independentemente de outras variáveis socioeconómicas?
 3. Qual é o impacto do rácio aluno/professor (PTRATIO) no preço das habitações, e se bairros com melhores recursos educativos tendem a apresentar habitações mais valorizadas?
 4. Quais as habitações consideradas outliers no valor mediano de mercado (MEDV) e que características as diferenciam das restantes? 
 ## 3. Metodologia de Gestão (PBL)
