@@ -11,9 +11,9 @@ clientes ativos e 20% que saíram.")
 ### 1.2. Correlações Relevantes
 *Quais as variáveis que têm maior relação com o problema? Incluam referências a gráficos que
 geraram no Kaggle.*
-* **Atributo LSTAT vs. Alvo (MEDV):** A análise bivariada revela que a variável LSTAT apresenta a correlação negativa mais forte com a variável alvo MEDV (r = -0.74), evidenciada tanto no heatmap de correlação como no scatter plot, onde se observa claramente que à medida que a % de população de baixa renda aumenta, o valor mediano das habitações diminui de forma consistente, confirmando que o perfil socioeconómico do bairro é o preditor mais determinante do preço das habitações no dataset de Boston.
-* **Atributo B vs. Alvo (MEDV):** (Ex: "O tipo de contrato mensal está fortemente ligado à saída de
-clientes.")
+* **Atributo LSTAT vs. Alvo (MEDV):** A análise bivariada revela que a variável LSTAT apresenta a correlação negativa mais forte com a variável alvo MEDV (r = -0.74), evidenciada tanto no heatmap de correlação como no scatter plot, onde se observa claramente que à medida que a % de população de baixa renda aumenta, o valor mediano das habitações diminui de forma consistente, confirmando que o perfil socioeconómico do bairro é o preditor mais determinante do preço das habitações no dataset de Boston. Estes resultados respondem à Pergunta de Investigação 1, confirmando que o LSTAT supera variáveis físicas como o número de divisões (RM, r = 0.70), provando que o contexto socioeconómico do bairro tem maior influência no preço das habitações do que as características físicas da própria casa."
+* **Atributo RM vs. Alvo (MEDV):**
+* **Atributo C vs. Alvo (MEDV):**
 ## 2. Qualidade dos Dados e Limpeza
 ### 2.1. Tratamento de Dados em Falta (Missing Data)
 * **Colunas afetadas:** [Lista de colunas]
