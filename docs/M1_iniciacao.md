@@ -22,7 +22,22 @@ Relevante e Temporal):*
 * **Disponibilidade:** Os dados encontram-se descarregados e armazenados numa base de dados em formato CSV.
 * **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O dataset apenas possui variáveis numéricas.
 * **Ética:** O dataset não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
-## 5. Cronograma Interno
+## 5. Descrição das Variáveis 
+* **CRIM:** Taxa de criminalidade per capita por cidade
+* **ZN:** Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados
+* **INDUS:** Proporção de hectares de comércio não varejista por cidade
+* **CHAS:** ??
+* **NOX:** Concentração de óxidos de nitrogênio (partes por 10 milhões
+* **RM:** Número médio de quartos por residência
+* **AGE:** Proporção de unidades ocupadas por proprietários construídas antes de 1940
+* **DIS:** Distâncias ponderadas até cinco centros de emprego de Boston
+* **RAD:** Índice de acessibilidade a rodovias radiais
+* **TAX:** ??
+* **PTRATIO:** ??
+* **B:** O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade
+* **LSTAT:** % da população de baixa renda
+* **MEDV:** Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$]
+## 6. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
 | :--- | :--- | :--- |
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
