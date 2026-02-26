@@ -15,9 +15,8 @@ geraram no Kaggle.*
 * **Atributo C vs. Alvo (MEDV):**
 ## 2. Qualidade dos Dados e Limpeza
 ### 2.1. Tratamento de Dados em Falta (Missing Data)
-* **Colunas afetadas:** [Lista de colunas]
-* **Estratégia adotada:** (Ex: "Substituímos os nulos da coluna 'Salário' pela mediana para
-evitar o impacto de outliers.")
+* **Colunas afetadas:** Nenhuma
+* **Estratégia adotada:** Foi verificado que o dataset não apresenta valores em falta, como tal, não foi necessária a aplicação de técnicas de imputação, mantendo-se a integridade dos dados originais.
 ### 2.2. Outliers e Inconsistências
 *Descrevam se encontraram valores impossíveis (ex: idade = 200) e como os resolveram.*
 ## 3. Engenharia de Atributos (Feature Engineering)
