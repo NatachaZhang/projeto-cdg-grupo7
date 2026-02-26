@@ -11,9 +11,9 @@ clientes ativos e 20% que saíram.")
 ### 1.2. Correlações Relevantes
 *Quais as variáveis que têm maior relação com o problema? Incluam referências a gráficos que
 geraram no Kaggle.*
-* **Atributo A vs. Alvo:** (Ex: "Notámos que quanto maior a idade, menor a probabilidade de
+* **Atributo A vs. Alvo (MEDV):** (Ex: "Notámos que quanto maior a idade, menor a probabilidade de
 cancelamento.")
-* **Atributo B vs. Alvo:** (Ex: "O tipo de contrato mensal está fortemente ligado à saída de
+* **Atributo B vs. Alvo (MEDV):** (Ex: "O tipo de contrato mensal está fortemente ligado à saída de
 clientes.")
 ## 2. Qualidade dos Dados e Limpeza
 ### 2.1. Tratamento de Dados em Falta (Missing Data)
