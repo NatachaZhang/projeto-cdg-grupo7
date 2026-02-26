@@ -26,14 +26,14 @@ Relevante e Temporal):*
 * **CRIM:** Taxa de criminalidade per capita por cidade
 * **ZN:** Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados
 * **INDUS:** Proporção de hectares de comércio não varejista por cidade
-* **CHAS:** ??
+* **CHAS:** Variável fictícia do rio Charles
 * **NOX:** Concentração de óxidos de nitrogênio (partes por 10 milhões
 * **RM:** Número médio de quartos por residência
 * **AGE:** Proporção de unidades ocupadas por proprietários construídas antes de 1940
 * **DIS:** Distâncias ponderadas até cinco centros de emprego de Boston
 * **RAD:** Índice de acessibilidade a rodovias radiais
-* **TAX:** ??
-* **PTRATIO:** ??
+* **TAX:** Taxa de imposto predial integral por cada 10.000 dólares
+* **PTRATIO:** Razão entre o número de alunos e professores por cidade
 * **B:** O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade
 * **LSTAT:** % da população de baixa renda
 * **MEDV:** Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$]
