@@ -11,8 +11,7 @@ clientes ativos e 20% que saíram.")
 ### 1.2. Correlações Relevantes
 *Quais as variáveis que têm maior relação com o problema? Incluam referências a gráficos que
 geraram no Kaggle.*
-* **Atributo A vs. Alvo (MEDV):** (Ex: "Notámos que quanto maior a idade, menor a probabilidade de
-cancelamento.")
+* **Atributo LSTAT vs. Alvo (MEDV):** A análise bivariada revela que a variável LSTAT apresenta a correlação negativa mais forte com a variável alvo MEDV (r = -0.74), evidenciada tanto no heatmap de correlação como no scatter plot, onde se observa claramente que à medida que a % de população de baixa renda aumenta, o valor mediano das habitações diminui de forma consistente, confirmando que o perfil socioeconómico do bairro é o preditor mais determinante do preço das habitações no dataset de Boston.
 * **Atributo B vs. Alvo (MEDV):** (Ex: "O tipo de contrato mensal está fortemente ligado à saída de
 clientes.")
 ## 2. Qualidade dos Dados e Limpeza
