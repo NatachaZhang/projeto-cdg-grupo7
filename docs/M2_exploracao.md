@@ -22,7 +22,7 @@ Realizou-se uma análise da distribuição das variáveis para identificar outli
 Decidimos manter os outliers identificados, uma vez que não se tratam de falhas de digitação, mas sim reflexos reais de disparidades sociais e económicas. 
 ## 3. Engenharia de Atributos (Feature Engineering)
 ### 3.1. Transformações Realizadas
-* **Encoding:** 
+* **Encoding:** Não se revelou necessária a aplicação de técnicas de encoding, dado que todas as variáveis do conjunto de dados se encontram em formato numérico.
 * **Escalonamento:** (Ex: "Aplicámos o StandardScaler nas variáveis numéricas para que todas
 fiquem na mesma escala.")
 ### 3.2. Criação de Novos Atributos
