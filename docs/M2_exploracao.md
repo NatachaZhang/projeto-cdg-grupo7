@@ -18,8 +18,8 @@ geraram no Kaggle.*
 * **Colunas afetadas:** Nenhuma
 * **Estratégia adotada:** Foi verificado que o dataset não apresenta valores em falta, como tal, não foi necessária a aplicação de técnicas de imputação, mantendo-se a integridade dos dados originais.
 ### 2.2. Outliers e Inconsistências
-*Foi realizada uma análise da distribuição das variáveis para identificar outliers e possíveis erros de registo.
-Através da visualizaçao dos boxplots de todas as variáveis do dataset, observou-se que a presença de outliers não é uniforme em todos o conjunto de dados.*
+Foi realizada uma análise da distribuição das variáveis para identificar outliers e possíveis erros de registo.
+Através da visualizaçao dos boxplots de todas as variáveis do dataset, observou-se que a presença de outliers não é uniforme em todos o conjunto de dados.
 ## 3. Engenharia de Atributos (Feature Engineering)
 ### 3.1. Transformações Realizadas
 * **Encoding:** (Ex: "Convertemos a variável 'Género' em numérica usando One-Hot Encoding.")
