@@ -27,7 +27,7 @@ características.
 * **Dimensão:** 506 linhas, 14 colunas
 ## 2. Exploração (Milestone 2)
 ### Limpeza e Preparação
-* [Breve resumo das ações de limpeza tomadas. Detalhes em `docs/M2_exploracao.md`]
+* 
 ### Principais Conclusões (EDA)
 > *Dica: Insere aqui o gráfico mais importante do projeto.*
 * **Ponto-chave:** [Ex: Identificámos que o fator X influencia em 40% o resultado Y, por aplicação
