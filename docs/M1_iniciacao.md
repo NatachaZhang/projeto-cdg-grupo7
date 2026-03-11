@@ -20,8 +20,8 @@ Relevante e Temporal):*
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
 ## 4. Análise de Viabilidade dos Dados
 * **Disponibilidade:** Os dados encontram-se descarregados e armazenados numa base de dados em formato CSV.
-* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O dataset apenas possui variáveis numéricas.
-* **Ética:** O dataset não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
+* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O conjunto de dados (_dataset_) apenas possui variáveis numéricas.
+* **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
 ## 5. Descrição das Variáveis 
 * **CRIM:** Taxa de criminalidade per capita por cidade
 * **ZN:** Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados
@@ -45,4 +45,4 @@ Relevante e Temporal):*
 | M3: Modelação | [Data] | Comparação de algoritmos e métricas. |
 | M4: Finalização| [Data] | Pitch e Relatório Final. |
 ---
-*Data de última atualização: [DD/MM/AAAA]* 
+*Data de última atualização: [11/03/2026]* 
