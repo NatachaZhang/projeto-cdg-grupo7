@@ -1,5 +1,5 @@
 # Milestone 2: Análise Exploratória e Engenharia de Atributos
-> **Nota de Revisão:** Este documento pressupõe que o dataset já foi identificado e descrito no
+> **Nota de Revisão:** Este documento pressupõe que o conjunto de dados (_dataset_) já foi identificado e descrito no
 ficheiro `docs/M1_iniciacao.md`. Caso precise de consultar o significado original das variáveis,
 deve consultar essa Milestone.
 ## 1. Análise Exploratória de Dados (EDA)
@@ -22,7 +22,7 @@ Realizou-se uma análise da distribuição das variáveis para identificar outli
 Decidimos manter os outliers identificados, uma vez que não se tratam de falhas de digitação, mas sim reflexos reais de disparidades sociais e económicas. 
 ## 3. Engenharia de Atributos (Feature Engineering)
 ### 3.1. Transformações Realizadas
-* **Encoding:** Não se revelou necessária a aplicação de técnicas de encoding, dado que todas as variáveis do conjunto de dados se encontram em formato numérico.
+* **Encoding:** Não se revelou necessária a aplicação de técnicas de codificação (_encoding_), dado que todas as variáveis do conjunto de dados (_dataset_) se encontram em formato numérico.
 * **Escalonamento:** (Ex: "Aplicámos o StandardScaler nas variáveis numéricas para que todas
 fiquem na mesma escala.")
 ### 3.2. Criação de Novos Atributos
@@ -40,4 +40,4 @@ pela idade do cliente.")
 *O que aprenderam sobre o dataset que não sabiam no final do Milestone 1? Os dados são suficientes
 para avançar para a modelação?*
 ---
-*Data de última atualização: [DD/MM/AAAA]* 
+*Data de última atualização: [11/03/2026]* 
