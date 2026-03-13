@@ -23,19 +23,19 @@ Relevante e Temporal):*
 * **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O conjunto de dados (_dataset_) apenas possui variáveis numéricas.
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
 ## 5. Descrição das Variáveis 
-* **CRIM:** Taxa de criminalidade per capita por cidade
+* **CRIM:** Taxa de criminalidade per capita por região
 * **ZN:** Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados
-* **INDUS:** Proporção de hectares de comércio não varejista por cidade
-* **CHAS:** Variável fictícia do rio Charles
-* **NOX:** Concentração de óxidos de nitrogênio (partes por 10 milhões
+* **INDUS:** Proporção de hectares ocupados por zonas industriais que não são comércio por retalho por região
+* **CHAS:** Variável binária indicadora da fronteira com o rio Charles
+* **NOX:** Concentração de óxidos de nitrogênio (partes por 10 milhões)
 * **RM:** Número médio de quartos por residência
 * **AGE:** Proporção de unidades ocupadas por proprietários construídas antes de 1940
 * **DIS:** Distâncias ponderadas até cinco centros de emprego de Boston
 * **RAD:** Índice de acessibilidade a rodovias radiais
 * **TAX:** Taxa de imposto predial integral por cada 10.000 dólares
-* **PTRATIO:** Razão entre o número de alunos e professores por cidade
+* **PTRATIO:** Proporção entre o número de alunos e professores por cidade
 * **B:** O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade
-* **LSTAT:** % da população de baixa renda
+* **LSTAT:** Percentagem da população com baixo rendimento
 * **MEDV:** Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$]
 ## 6. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
