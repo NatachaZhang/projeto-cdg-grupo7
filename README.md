@@ -19,7 +19,7 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 ### Contexto e Problema de Negócio
 Estimar o valor de mercado de um imóvel com base em localização, área e
 características.
-### Objetivos do Projeto
+### Objetivos SMART do Projeto
 * **Objetivo 1:** Identificar as variáveis que mais influenciam o preço médio das habitações e agrupar as habitações em perfis distintos.
 * **Objetivo 2:** Testar diferentes algoritmos de regressão para prever o preço médio das habitações e selecionar o modelo mais adequado para apoiar as decisões baseadas nos dados.
 ### Fonte de Dados
