@@ -52,6 +52,7 @@ do método ganho de informação]
 3. Execute os notebooks na pasta `notebooks/` seguindo a ordem numérica.
 ## 5. Referências
 1.Fedesoriano. (2021). Boston House Prices-Advanced Regression Techniques. Kaggle. https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data  
+
 **Instituição:** Coimbra Business School | ISCAC  
 **Curso:** Licenciatura em Ciência de Dados para a Gestão  
 **Unidade Curricular:** Projeto em Ciência de Dados  
