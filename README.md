@@ -46,13 +46,9 @@ do método ganho de informação]
 2. Instale as dependências: `pip install -r requirements.txt`
 3. Execute os notebooks na pasta `notebooks/` seguindo a ordem numérica.
 ## 5. Referências
-1.
-
-**Instituição:** Coimbra Business School | ISCAC 
-
-**Curso:** Licenciatura em Ciência de Dados para a Gestão 
-
-**Unidade Curricular:** Projeto em Ciência de Dados 
-
-**Professor Responsável:** Dora Melo (dmelo@iscac.pt) 
+1.  
+**Instituição:** Coimbra Business School | ISCAC  
+**Curso:** Licenciatura em Ciência de Dados para a Gestão  
+**Unidade Curricular:** Projeto em Ciência de Dados  
+**Professor Responsável:** Dora Melo (dmelo@iscac.pt)  
 
