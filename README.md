@@ -1,4 +1,4 @@
-# projeto-cdg-grupo7
+# Análise Preditiva do Mercado Imobiliário de Boston
 ## Identificação da Equipa
 * **Grupo nº:7**
 * **Membros:**
