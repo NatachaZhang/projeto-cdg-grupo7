@@ -26,14 +26,12 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 * **Escalonamento:** (Ex: "Aplicámos o StandardScaler nas variáveis numéricas para que todas
 fiquem na mesma escala.")
 ### 3.2. Criação de Novos Atributos
-*Descrevam as variáveis que criaram para ajudar o modelo.*
-* **Nova Variável [Nome]:** (Ex: "Criámos a 'Tenure_Per_Year' que divide o tempo de contrato
-pela idade do cliente.")
+O Índice de Qualidade de Vida (IQV) agrega três variáveis CRIM , NOX e PTRATIO numa única métrica. Como as três são de natureza negativa, ou seja, valores altos representam condições desfavoráveis, foi aplicado o inverso (1/variável) a cada uma antes de as somar, garantindo que valores altos do IQV correspondam a boas condições de vida. A soma assegura que cada fator contribui de forma independente e equilibrada para o índice final. Após a criação do IQV, as variáveis originais foram removidas do dataset para evitar redundância na fase de modelação.
 ## 4. Dicionário de Dados Final (Pós-Processamento)
 *Listagem final das variáveis que serão entregues ao modelo na Fase 3.*
 | Atributo | Tipo | Descrição |
 | :--- | :--- | :--- |
-| `cliente_id` | ID | Removido (não preditivo) |
+| `IQV` | Float | Removido (não preditivo) |
 | `idade_norm` | Float | Idade após normalização |
 | `is_premium` | Binary | 1 para clientes com plano superior |
 ## 5. Conclusões da Fase de Exploração
