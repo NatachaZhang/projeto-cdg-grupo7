@@ -23,8 +23,7 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 ## 3. Engenharia de Atributos (Feature Engineering)
 ### 3.1. Transformações Realizadas
 * **Encoding:** Não se revelou necessária a aplicação de técnicas de codificação (_encoding_), dado que todas as variáveis do conjunto de dados (_dataset_) se encontram em formato numérico.
-* **Escalonamento:** (Ex: "Aplicámos o StandardScaler nas variáveis numéricas para que todas
-fiquem na mesma escala.")
+* **Escalonamento:** Procedeu-se à normalização (_Min-Max_) das variáveis que não apresentam outliers, de forma a garantir a comparabilidade entre os valores. Por outro lado, aplicou-se a standardização(_Z-score_) às variáveis que apresentam outliers, uma vez que esta técnica é menos sensível à presença de valores extremos, de forma a reduzir o seu impacto sem remover informação relevante
 ### 3.2. Criação de Novos Atributos
 * **Índice de Qualidade de Vida (IQV):** agrega três variáveis CRIM , NOX e PTRATIO numa única métrica. Como as três são de natureza negativa, ou seja, valores altos representam condições desfavoráveis, foi aplicado o inverso (1/variável) a cada uma antes de as somar, garantindo que valores altos do IQV correspondam a boas condições de vida. A soma assegura que cada fator contribui de forma independente e equilibrada para o índice final. Após a criação do IQV, as variáveis originais foram removidas do dataset para evitar redundância na fase de modelação.
 * **Outra variável:**
