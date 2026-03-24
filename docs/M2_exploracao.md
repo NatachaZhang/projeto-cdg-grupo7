@@ -42,7 +42,7 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 | `INDUS_norm` | Float | INDUS após normalização |
 | `NOX_norm` | Float | NOX após normalização |
 | `AGE_norm` | Float | AGE após normalização |
-| `RAD_norm` | Float | RAD após normalização |
+| `RAD_norm` | Int | RAD após normalização |
 | `TAX_norm` | Float | TAX após normalização |
 ## 5. Conclusões da Fase de Exploração
 *O que aprenderam sobre o dataset que não sabiam no final do Milestone 1? Os dados são suficientes
