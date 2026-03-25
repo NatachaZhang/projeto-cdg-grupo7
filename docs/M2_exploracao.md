@@ -29,21 +29,21 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 * **Outra variável:**
 ## 4. Dicionário de Dados Final (Pós-Processamento)
 *Listagem final das variáveis que serão entregues ao modelo na Fase 3.*
-| Atributo | Tipo | Descrição |
-| :--- | :--- | :--- |
-| `IQV` | Float | Índice de Qualidade de Vida (Nova variável) |
-| `CRIM_stand` | Float | CRIM após standardização |
-| `RM_stand` | Float | RM após standardização |
-| `LSTAT_stand` | Float | LSTAT após standardização |
-| `DIS_stand` | Float | DIS após standardização |
-| `PTRATIO_stand` | Float | PTRATIO após standardização |
-| `B_stand` | Float | B após standardização |
-| `ZN_stand` | Float | ZN após standardização |
-| `INDUS_norm` | Float | INDUS após normalização |
-| `NOX_norm` | Float | NOX após normalização |
-| `AGE_norm` | Float | AGE após normalização |
-| `RAD_norm` | Int | RAD após normalização |
-| `TAX_norm` | Float | TAX após normalização |
+| Atributo | Tipo | Descrição | Método |
+| :--- | :--- | :--- |:--- |
+| `IQV` | Float | Índice de Qualidade de Vida (Nova variável) |  |
+| `CRIM_stand` | Float | CRIM após standardização |  |
+| `RM_stand` | Float | RM após standardização |  |
+| `LSTAT_stand` | Float | LSTAT após standardização |  |
+| `DIS_stand` | Float | DIS após standardização |  |
+| `PTRATIO_stand` | Float | PTRATIO após standardização |  |
+| `B_stand` | Float | B após standardização |  |
+| `ZN_stand` | Float | ZN após standardização |  |
+| `INDUS_norm` | Float | INDUS após normalização |  |
+| `NOX_norm` | Float | NOX após normalização |  |
+| `AGE_norm` | Float | AGE após normalização |  |
+| `RAD_norm` | Int | RAD após normalização |  |
+| `TAX_norm` | Float | TAX após normalização |  |
 
 ## 5. Conclusões da Fase de Exploração
 
