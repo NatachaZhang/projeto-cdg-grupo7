@@ -44,7 +44,9 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 | `AGE_norm` | Float | AGE após normalização |
 | `RAD_norm` | Int | RAD após normalização |
 | `TAX_norm` | Float | TAX após normalização |
+
 ## 5. Conclusões da Fase de Exploração
+
 A análise exploratória revelou que o preço das habitações (MEDV) é fortemente influenciado por fatores socioeconómicos, destacando-se a variável LSTAT como o principal preditor. Verificou-se também que o conjunto de dados apresenta boa qualidade, sem valores em falta, duplicados ou erros de inserção. Os outliers identificados foram considerados plausíveis e tratados através de técnicas de escalonamento. Conclui-se que os dados são adequados e suficientes para avançar para a fase de modelação.
 ---
 *Data de última atualização: [24/03/2026]* 
