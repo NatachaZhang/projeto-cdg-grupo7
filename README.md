@@ -25,7 +25,7 @@ características.
 ### Perguntas de Investigação
 1. De que forma o modelo de regressão revela que as condições socioeconómicas do bairro (LSTAT) condicionam o valor habitacional mais do que as características físiscas da habitação (RM), e que padrão descreve essa relação?
 2. O modelo consegue distinguir o efeito direto da criminalidade (CRIM) no valor habitacional do efeito mediado pelo estatuto socioeconómico (LSTAT), e em que medida a criminalidade constitui um preditor autónomo ou reflete as condições do bairro?
-3. Qual é o impacto do rácio aluno/professor (PTRATIO) no preço das habitações, e se bairros com melhores recursos educativos tendem a apresentar habitações mais valorizadas?
+3. Como é que o modelo capta a relação entre a qualidade dos recursos educativos (PTRATIO) e o valor das habitações, e esse efeito é uniforme ao longo da distribuição de preços ou concentra-se em determinados segmentos do mercado?
 4. Quais as habitações consideradas outliers no valor mediano de mercado (MEDV) e que características as diferenciam das restantes? 
 ### Fonte de Dados
 * **Dataset:** https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data
