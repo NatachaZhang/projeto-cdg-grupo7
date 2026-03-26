@@ -24,7 +24,7 @@ características.
 * **Objetivo 2:** Comparar o desempenho de algoritmos de regressão na previsão do valor médio das habitações, selecionar o modelo com melhor RMSE e R^2 superior a 0.85, até ao Milestone 3.
 ### Perguntas de Investigação
 1. De que forma o modelo de regressão revela que as condições socioeconómicas do bairro (LSTAT) condicionam o valor habitacional mais do que as características físiscas da habitação (RM), e que padrão descreve essa relação?
-2. As zonas com maior taxa de criminalidade per capita (CRIM) estão associadas a valores de habitação significativamente mais baixos, independentemente de outras variáveis socioeconómicas?
+2. O modelo consegue distinguir o efeito direto da criminalidade (CRIM) no valor habitacional do efeito mediado pelo estatuto socioeconómico (LSTAT), e em que medida a criminalidade constitui um preditor autónomo ou reflete as condições do bairro?
 3. Qual é o impacto do rácio aluno/professor (PTRATIO) no preço das habitações, e se bairros com melhores recursos educativos tendem a apresentar habitações mais valorizadas?
 4. Quais as habitações consideradas outliers no valor mediano de mercado (MEDV) e que características as diferenciam das restantes? 
 ### Fonte de Dados
