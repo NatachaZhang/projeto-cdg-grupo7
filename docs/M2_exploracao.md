@@ -32,15 +32,12 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 | :--- | :--- | :--- |:--- |
 | `IQV` | Float | Índice de Qualidade de Vida (Nova variável) | Engenharia de Atributos(criação manual - inversão e soma) |
 | `IAH` | Float | Índice de Atratividade Habitacional (Nova variável) | Engenharia de Atributos (criação manual - divisão e multiplicação) |
-| `CRIM_stand` | Float | CRIM após padronização | StandardScaler |
 | `RM_stand` | Float | RM após padronização | StandardScaler |
 | `LSTAT_stand` | Float | LSTAT após padronização | StandardScaler |
 | `DIS_stand` | Float | DIS após padronização | StandardScaler |
-| `PTRATIO_stand` | Float | PTRATIO após padronização | StandardScaler |
 | `B_stand` | Float | B após padronização | StandardScaler |
 | `ZN_stand` | Float | ZN após padronização | StandardScaler |
 | `INDUS_norm` | Float | INDUS após normalização | MinMaxScaler |
-| `NOX_norm` | Float | NOX após normalização | MinMaxScaler |
 | `AGE_norm` | Float | AGE após normalização | MinMaxScaler |
 | `RAD_norm` | Int | RAD após normalização | MinMaxScaler |
 | `TAX_norm` | Float | TAX após normalização | MinMaxScaler |
