@@ -31,8 +31,8 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 *Listagem final das variáveis que serão entregues ao modelo na Fase 3.*
 | Atributo | Tipo | Descrição | Método |
 | :--- | :--- | :--- |:--- |
-| `IQV` | Float | Índice de Qualidade de Vida (Nova variável) | Feature Engineering (criação manual — inversão e soma) |
-| `IAH` | Float | Índice de Atratividade Habitacional (Nova variável) | Feature Engineering (divisão e multiplicação) |
+| `IQV` | Float | Índice de Qualidade de Vida (Nova variável) | Feature Engineering (criação manual - inversão e soma) |
+| `IAH` | Float | Índice de Atratividade Habitacional (Nova variável) | Feature Engineering (criação manual - divisão e multiplicação) |
 | `CRIM_stand` | Float | CRIM após padronização | StandardScaler |
 | `RM_stand` | Float | RM após padronização | StandardScaler |
 | `LSTAT_stand` | Float | LSTAT após padronização | StandardScaler |
