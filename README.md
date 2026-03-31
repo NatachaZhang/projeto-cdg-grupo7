@@ -28,7 +28,7 @@ características.
 3. Como é que o modelo capta a relação entre a qualidade dos recursos educativos (PTRATIO) e o valor das habitações, e esse efeito é uniforme ao longo da distribuição de preços ou concentra-se em determinados segmentos do mercado?
 4. O modelo identifica perfis distintos de outliers em MEDV, tanto nos valores extremamente elevados como nos mais baixos, e que combinação de variáveis explica esses casos atípicos, de acordo com o que o modelo aprendeu? 
 ### Fonte de Dados
-* **Dataset:** https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data
+* **Dataset:** [Kaggle](https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data)
 * **Dimensão:** 506 linhas, 14 colunas
 ## 2. Exploração (Milestone 2)
 ### Limpeza e Preparação
