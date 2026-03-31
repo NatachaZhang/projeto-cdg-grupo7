@@ -6,7 +6,7 @@ deve consultar essa Milestone.
 *A variável alvo MEDV apresenta uma distribuição com assimetria positiva, onde a maioria das habitações se concentra na faixa dos 20 a 25 mil dólares, existindo um conjunto reduzido de observações com valores significativamente elevados que originam uma cauda mais extensa no lado direito da distribuição.
 Relativamente ao equilíbrio, a variável não pode ser considerada totalmente equilibrada. O histograma revela uma clara concentração de observações nos valores intermédios, com menor frequência nos extremos. O diagrama de caixas (boxplot) confirma ainda a presença de vários outliers no limite superior, visíveis como pontos acima dos 40 mil dólares.
 No que diz respeito à normalidade, a distribuição de MEDV não segue uma distribuição normal perfeita. Embora apresente um pico central próximo dos 20 mil dólares, a cauda direita alongada afasta-a da simetria característica de uma distribuição normal, o que poderá influenciar o desempenho do modelo de regressão linear, uma vez que este pressupõe normalidade nos resíduos para garantir previsões fiáveis.*
-> **Factos importantes:** A nossa variável alvo 'MEDV' não segue uma distribuição normal
+
 ### 1.2. Correlações Relevantes
 *Quais as variáveis que têm maior relação com o problema? Incluam referências a gráficos que
 geraram no Kaggle.*
