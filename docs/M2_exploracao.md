@@ -32,13 +32,14 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 | Atributo | Tipo | Descrição | Método |
 | :--- | :--- | :--- |:--- |
 | `IQV` | Float | Índice de Qualidade de Vida (Nova variável) | Feature Engineering (criação manual — inversão e soma) |
-| `CRIM_stand` | Float | CRIM após standardização | StandardScaler |
-| `RM_stand` | Float | RM após standardização | StandardScaler |
-| `LSTAT_stand` | Float | LSTAT após standardização | StandardScaler |
-| `DIS_stand` | Float | DIS após standardização | StandardScaler |
-| `PTRATIO_stand` | Float | PTRATIO após standardização | StandardScaler |
-| `B_stand` | Float | B após standardização | StandardScaler |
-| `ZN_stand` | Float | ZN após standardização | StandardScaler |
+| `IAH` | Float | Índice de Atratividade Habitacional (Nova variável) | Feature Engineering (divisão e multiplicação) |
+| `CRIM_stand` | Float | CRIM após padronização | StandardScaler |
+| `RM_stand` | Float | RM após padronização | StandardScaler |
+| `LSTAT_stand` | Float | LSTAT após padronização | StandardScaler |
+| `DIS_stand` | Float | DIS após padronização | StandardScaler |
+| `PTRATIO_stand` | Float | PTRATIO após padronização | StandardScaler |
+| `B_stand` | Float | B após padronização | StandardScaler |
+| `ZN_stand` | Float | ZN após padronização | StandardScaler |
 | `INDUS_norm` | Float | INDUS após normalização | MinMaxScaler |
 | `NOX_norm` | Float | NOX após normalização | MinMaxScaler |
 | `AGE_norm` | Float | AGE após normalização | MinMaxScaler |
