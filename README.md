@@ -35,8 +35,7 @@ características.
 * A análise de qualidade dos dados revelou que o conjunto de dados (_dataset_) não apresenta valores nulos, registos duplicados nem erros de inserção aparentes, não tendo sido necessário realizar operações de limpeza. Os dados encontram-se prontos para a fase de modelação.
 * As variáveis foram posteriormente escalonadas de acordo com a presença de outliers, as variáveis com outliers foram padronizadas (StandardScaler), por ser mais robusta a valores extremos, enquanto as variáveis sem outliers foram normalizadas (MinMaxScaler).
 ### Principais Conclusões (EDA)
-> *Dica: Insere aqui o gráfico mais importante do projeto.*
-
+> ![Matriz de Correlação](https://github.com/NatachaZhang/projeto-cdg-grupo7/blob/main/reports%20/figures/matriz_correlacao.png)
 * **Ponto-chave:** [A análise exploratória permitiu identificar as variáveis com maior influência no preço dos imóveis (MEDV). O RM e o LSTAT destacaram-se como as variáveis com correlações mais elevadas com o MEDV, de 0,70 e -0,74, respetivamente. Com base nesta análise, foram criadas duas novas variáveis, o IAH e o IQV, que combinam variáveis complementares para enriquecer a capacidade preditiva do modelo. Foi ainda observada multicolinearidade entre as variáveis RAD e TAX (r = 0,91), tendo sido decidido remover o RAD, uma vez que o TAX apresentava uma correlação mais forte com a variável alvo.]
 ## 3. Modelação (Milestone 3)
 ### Abordagem Técnica
