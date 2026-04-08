@@ -8,9 +8,12 @@ para evitar fugas de informação (data leakage).
 dataset é desequilibrado e queremos evitar falsos negativos.")
 ## 2. Experiências Realizadas
 ### 2.1. Modelo Baseline
-*O ponto de partida simples.*
-* **Algoritmo:** (p/ex.: Regressão Logística)
-* **Resultado:** (p/ex.: Accuracy: 0.72)
+* **Algoritmo:** Regressão Linear Simples
+* **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
+* **Resultado:**
+* - RMSE: 4.7511
+  - MAE: 3.3544
+  - R^2: 0.6922
 ### 2.2. Modelos Candidatos
 *Listagem dos algoritmos testados e a justificação da escolha.*
 | Algoritmo | Parâmetros Base | Métrica (Treino) | Métrica (Teste) | Notas |
