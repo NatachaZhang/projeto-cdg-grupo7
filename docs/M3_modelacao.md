@@ -16,11 +16,11 @@ dataset é desequilibrado e queremos evitar falsos negativos.")
   - R²: 0.6922
 ### 2.2. Modelos Candidatos
 *Listagem dos algoritmos testados e a justificação da escolha.*
-| Algoritmo | Parâmetros Base | Métrica (Treino) | Métrica (Teste) | Notas |
-| :--- | :--- | :--- | :--- | :--- |
-| Random Forest | n_estimators=100 | 0.95 | 0.82 | Sinais de overfitting |
-| XGBoost | default | 0.88 | 0.85 | Melhor generalização |
-| SVM | kernel='rbf' | 0.80 | 0.79 | Lento no treino |
+| Algoritmo | Parâmetros Base | RMSE (Treino) | RMSE (Teste) | MAE (Treino) | MAE (Teste) | R² (Treino) | R² (Teste) | Notas |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- |
+| Random Forest | n_estimators=100, random_state=42 | 1.51 | 3.80 | 1.05 | 2.66 |  0.97 | 0.80 |Sobreajuste moderado - R² treino muito superior ao teste |
+| XGBoost | n_estimators=100, random_state=42 | 0.05 | 3.69 |0.04 | 2.73 | 0.99 | 0.81 | Sobreajuste severo - R² treino quase perfeito (0.9999) mas teste inferior|
+| SVR | kernel='rbf' | 5.71 | 5.69 | 3.78 | 3.40 |  0.62 | 0.56 | Underfitting - desempenho fraco em treino e teste, não consegue capturar a complexidade dos dados |
 ## 3. Otimização (Tuning)
 *Descrevam como melhoraram o melhor modelo.*
 * **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
