@@ -12,8 +12,8 @@ dataset é desequilibrado e queremos evitar falsos negativos.")
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
   - RMSE: 4.7511
-  *-* MAE: 3.3544
-  *-* R²: 0.6922
+  - MAE: 3.3544
+  - R²: 0.6922
 ### 2.2. Modelos Candidatos
 *Listagem dos algoritmos testados e a justificação da escolha.*
 | Algoritmo | Parâmetros Base | Métrica (Treino) | Métrica (Teste) | Notas |
