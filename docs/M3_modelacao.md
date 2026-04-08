@@ -1,8 +1,8 @@
 # Milestone 3: Modelação e Avaliação
 ## 1. Estratégia de Modelação
 *Descrevam como prepararam os dados para os algoritmos.*
-* **Divisão do dataset:** (p/ex.: "Utilizámos uma divisão de 70% para treino e 30% para teste
-com semente aleatória (random_state) fixa.")
+* **Divisão do dataset:** Utilizámos uma divisão de 80% para treino e 20% para teste
+com semente aleatória (random_state) fixa ficando com 404 amostras de treino de e 102 amostras para teste.
 * **Métrica de Sucesso:** (p/ex.: "A métrica principal escolhida foi o F1-Score, pois o nosso
 dataset é desequilibrado e queremos evitar falsos negativos.")
 ## 2. Experiências Realizadas
