@@ -13,7 +13,7 @@ dataset é desequilibrado e queremos evitar falsos negativos.")
 * **Resultado:**
 * - RMSE: 4.7511
   - MAE: 3.3544
-  - R^2: 0.6922
+  - R²: 0.6922
 ### 2.2. Modelos Candidatos
 *Listagem dos algoritmos testados e a justificação da escolha.*
 | Algoritmo | Parâmetros Base | Métrica (Treino) | Métrica (Teste) | Notas |
