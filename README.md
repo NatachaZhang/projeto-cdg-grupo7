@@ -17,11 +17,11 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 * **`requirements.txt`**: Ficheiro de configuração com as bibliotecas necessárias.
   
 ## 1. Iniciação (Milestone 1)
-O presente projeto utiliza técnicas de Ciência de Dados para prever o preço de habitação na área metropolitana de Boston. O valor de um imóvel depende de uma série de fatores, cujo o objetivo é perceber quais desses fatores mais influenciam o preço e e construir modelos capazes de fazer previsões fiáveis.  
-O conjunto de dados (_dataset_) contém informação sobre 506 observações, com 14 variáveis que descrevem características socioeconómicas, habitacionais e ambientais. A variável que queremos prever é `MEDV`, o valor médio em milares de dolares.
+
 ### Contexto e Problema de Negócio
-Estimar o valor de mercado de um imóvel com base em localização, área e
-características.
+O presente projeto utiliza técnicas de Ciência de Dados para prever o preço de habitação na área metropolitana de Boston. O valor de um imóvel depende de uma série de fatores, cujo o objetivo é perceber quais desses fatores mais influenciam o preço e e construir modelos capazes de fazer previsões fiáveis.  
+
+O conjunto de dados (_dataset_) contém informação sobre 506 observações, com 14 variáveis que descrevem características socioeconómicas, habitacionais e ambientais. A variável que queremos prever é `MEDV`, o valor médio em milares de dolares.
 ### Objetivos SMART do Projeto
 * **Objetivo 1:** Identificar as 3 variáveis que mais influenciam o preço mediano das habitações (`MEDV`) através de análise de correlação e Feature Importance, e segmentar as 506 habitações em grupos distintos com K-Means validado por um Coeficiente de Silhueta superior a 0.50, até ao Milestone 2.
 * **Objetivo 2:** Comparar o desempenho de algoritmos de regressão na previsão do valor médio das habitações, selecionar o modelo com melhor `RMSE` e R^2 superior a 0.85, até ao Milestone 3.
