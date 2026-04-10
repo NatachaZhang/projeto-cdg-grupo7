@@ -1,9 +1,7 @@
 # Milestone 3: Modelação e Avaliação
 ## 1. Estratégia de Modelação
 *Descrevam como prepararam os dados para os algoritmos.*
-* **Divisão do dataset:** Utilizámos uma divisão de 80% para treino e 20% para teste
-com semente aleatória (_random_state_) fixa, ficando com 404 amostras de treino de e 102 amostras para teste, garantindo o isolamento total dos dados de avaliação 
-para evitar fugas de informação (_data leakage_).
+* **Divisão do dataset:** Realizámos testes com duas divisões distintas do dataset, 80/20 e 70/30, com semente aleatória (random_state=42) fixa para garantir a reprodutibilidade dos resultados. A divisão 80/20 ficou com 404 amostras de treino e 102 de teste, enquanto a divisão 70/30 ficou com 354 amostras de treino e 152 de teste. Após comparação das métricas obtidas em ambas as divisões, verificou-se que a divisão 70/30 produziu melhores resultados globais superando todas as combinações testadas. Por este motivo, adotámos a divisão 70/30 como estratégia de validação para a fase de otimização, garantindo o isolamento total dos dados de avaliação para evitar fugas de informação (_data leakage_).
 * **Métrica de Sucesso:** (p/ex.: "A métrica principal escolhida foi o F1-Score, pois o nosso
 dataset é desequilibrado e queremos evitar falsos negativos.")
 ## 2. Experiências Realizadas
