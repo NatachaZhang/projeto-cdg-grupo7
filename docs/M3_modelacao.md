@@ -2,8 +2,8 @@
 ## 1. Estratégia de Modelação
 *Descrevam como prepararam os dados para os algoritmos.*
 * **Divisão do dataset:** Utilizámos uma divisão de 80% para treino e 20% para teste
-com semente aleatória (random_state) fixa, ficando com 404 amostras de treino de e 102 amostras para teste, garantindo o isolamento total dos dados de avaliação 
-para evitar fugas de informação (data leakage).
+com semente aleatória (_random_state_) fixa, ficando com 404 amostras de treino de e 102 amostras para teste, garantindo o isolamento total dos dados de avaliação 
+para evitar fugas de informação (_data leakage_).
 * **Métrica de Sucesso:** (p/ex.: "A métrica principal escolhida foi o F1-Score, pois o nosso
 dataset é desequilibrado e queremos evitar falsos negativos.")
 ## 2. Experiências Realizadas
