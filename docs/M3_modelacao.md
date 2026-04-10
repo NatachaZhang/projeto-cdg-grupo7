@@ -9,16 +9,16 @@ dataset é desequilibrado e queremos evitar falsos negativos.")
 * **Algoritmo:** Regressão Linear Simples
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
-  - RMSE: 4.7511
-  - MAE: 3.3544
-  - R²: 0.6922
+  - RMSE: 4.8757
+  - MAE: 3.5549
+  - R²: 0.6810
 ### 2.2. Modelos Candidatos
 *Listagem dos algoritmos testados e a justificação da escolha.*
 | Algoritmo | Parâmetros Base | RMSE (Treino) | RMSE (Teste) | MAE (Treino) | MAE (Teste) | R² (Treino) | R² (Teste) | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- |
-| Random Forest | n_estimators=100, random_state=42 | 1.51 | 3.80 | 1.05 | 2.66 |  0.97 | 0.80 |Sobreajuste moderado - R² treino muito superior ao teste |
-| XGBoost | n_estimators=100, random_state=42 | 0.05 | 3.69 |0.04 | 2.73 | 0.99 | 0.81 | Sobreajuste severo - R² treino quase perfeito (0.9999) mas teste inferior|
-| SVR | kernel='rbf' | 5.71 | 5.69 | 3.78 | 3.40 |  0.62 | 0.56 | Underfitting - desempenho fraco em treino e teste, não consegue capturar a complexidade dos dados |
+| Random Forest | n_estimators=100, random_state=42 | 1.66 | 3.58 | 1.14 | 2.55 |  0.97 | 0.83 |Melhor modelo global, vence nas 3 métricas em simultâneo com sobreajuste moderado |
+| XGBoost | n_estimators=100, random_state=42 | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Sobreajuste severo, R² treino quase perfeito (0.999964) indica memorização dos dados de treino|
+| SVR | kernel='rbf' | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Underfitting, desempenho fraco em ambos os conjuntos, não captura a complexidade dos dados |
 ## 3. Otimização (Tuning)
 *Descrevam como melhoraram o melhor modelo.*
 * **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
