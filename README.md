@@ -15,7 +15,10 @@ A estrutura deste projeto segue as boas práticas de Ciência de Dados e Engenha
 * **`src/`**: Código-fonte modular (scripts `.py`) para funções reutilizáveis.
 * **`reports/`**: Relatórios finais, apresentações e exportação de figuras (`figures/`).
 * **`requirements.txt`**: Ficheiro de configuração com as bibliotecas necessárias.
+  
 ## 1. Iniciação (Milestone 1)
+O presente projeto utiliza técnicas de Ciência de Dados para prever o preço de habitação na área metropolitana de Boston. O valor de um imóvel depende de uma série de fatores, cujo o objetivo é perceber quais desses fatores mais influenciam o preço e e construir modelos capazes de fazer previsões fiáveis.  
+O conjunto de dados (_dataset_) contém informação sobre 506 observações, com 14 variáveis que descrevem características socioeconómicas, habitacionais e ambientais. A variável que queremos prever é `MEDV`, o valor médio em milares de dolares.
 ### Contexto e Problema de Negócio
 Estimar o valor de mercado de um imóvel com base em localização, área e
 características.
@@ -37,10 +40,10 @@ características.
 ## 2. Exploração (Milestone 2)
 ### Limpeza e Preparação
 * A análise de qualidade dos dados revelou que o conjunto de dados (_dataset_) não apresenta valores nulos, registos duplicados nem erros de inserção aparentes, não tendo sido necessário realizar operações de limpeza. Os dados encontram-se prontos para a fase de modelação.
-* As variáveis foram posteriormente escalonadas de acordo com a presença de outliers, as variáveis com outliers foram padronizadas (StandardScaler), por ser mais robusta a valores extremos, enquanto as variáveis sem outliers foram normalizadas (MinMaxScaler).
+* As variáveis foram posteriormente escalonadas de acordo com a presença de outliers, as variáveis com outliers foram padronizadas (_StandardScaler_), por ser mais robusta a valores extremos, enquanto as variáveis sem outliers foram normalizadas (_MinMaxScaler_).
 ### Principais Conclusões (EDA)
 > ![Matriz de Correlação](https://github.com/NatachaZhang/projeto-cdg-grupo7/blob/main/reports%20/figures/matriz_correlacao.png)
-* **Ponto-chave:** [A análise exploratória permitiu identificar as variáveis com maior influência no preço dos imóveis (`MEDV`). O `RM` e o `LSTAT` destacaram-se como as variáveis com correlações mais elevadas com o MEDV, de 0,70 e -0,74, respetivamente. Com base nesta análise, foram criadas duas novas variáveis, o `IAH` e o `IQV`, que combinam variáveis complementares para enriquecer a capacidade preditiva do modelo. Foi ainda observada multicolinearidade entre as variáveis `RAD` e `TAX` (r = 0,91), tendo sido decidido remover o `RAD`, uma vez que o `TAX` apresentava uma correlação mais forte com a variável alvo.]
+* **Ponto-chave:** [A análise exploratória permitiu identificar as variáveis com maior influência no preço dos imóveis (`MEDV`). O `RM` e o `LSTAT` destacaram-se como as variáveis com correlações mais elevadas com o `MEDV`, de 0,70 e -0,74, respetivamente. Com base nesta análise, foram criadas duas novas variáveis, o `IAH` e o `IQV`, que combinam variáveis complementares para enriquecer a capacidade preditiva do modelo. Foi ainda observada multicolinearidade entre as variáveis `RAD` e `TAX` (r = 0,91), tendo sido decidido remover o `RAD`, uma vez que o `TAX` apresentava uma correlação mais forte com a variável alvo.]
   
 ## 3. Modelação (Milestone 3)
 ### Abordagem Técnica
