@@ -6,7 +6,7 @@ Atualmente entidades como agências imobiliárias, bancos (crédito habitação)
 *Defina os objetivos do projeto seguindo a lógica SMART (Específico, Mensurável, Atingível,
 Relevante e Temporal):*
 1. **Objetivo 1:** Criar um modelo de _Clustering_ para segmentar as habitações em perfis distintos com base nas suas características socioeconómicas, habitacionais e ambientais, validado pelo método do cotovelo e por um Coeficiente de Silhueta (>0.50), até ao Milestone 3.
-2. **Objetivo 2:** Construir um modelo de previsão supervisionada do preço médio das habitações ('MEDV'), alcançando um R² superior a 0.80 e um RMSE inferior a 3.500 dólares, até ao Milestone 3.
+2. **Objetivo 2:** Construir um modelo de previsão supervisionada do preço médio das habitações (`MEDV`), alcançando um R² superior a 0.80 e um RMSE inferior a 3.500 dólares, até ao Milestone 3.
 ### Perguntas de Investigação
 1. De que forma o modelo de regressão revela qua as condições socioeconómicas do bairro (LSTAT) condicionam o valor habitacional mais do que as características físicas da habitação (RM), que padrão descreve essa relação?
 2. O modelo consegue distinguir o efeito direto da criminalidade (CRIM) no valor habitacional do efeito mediado pelo estatuto socioeconómico (LSTAT), e em que medida a criminalidade constitui um preditor autónomo ou reflete as condições do bairro?
