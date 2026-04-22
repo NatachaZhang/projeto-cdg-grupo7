@@ -32,7 +32,7 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
   
 ## 5. Dicionário de Dados 
-| **Variável** | **Tipo de Váriável** | **Valores** | **Descrição** |
+| **Variável** | **Tipo estatístico de dados** | **Valores** | **Descrição** |
 | :--- | :--- | :--- | :--- |
 |**`CRIM`**| Numéria Contínua | Valores decimais entre [0.006320, 88.9762] | Taxa de criminalidade per capita por região |
 |**`ZN`**| Numéria Contínua | Valores decimais entre [0, 100] | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
@@ -60,4 +60,4 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 ## 7. Referências
 * S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
 ---
-*Data de última atualização: [11/03/2026]* 
+*Data de última atualização: [22/04/2026]* 
