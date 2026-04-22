@@ -60,7 +60,7 @@ Em síntese, o conjunto de dados (_dataset_) apresenta elevada qualidade estrutu
 | :--- | :--- | :--- |
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
 | M2: Exploração | 24/03/2026 | Notebook de EDA e Dados Processados. |
-| M3: Modelação | [Data] | Comparação de algoritmos e métricas. |
+| M3: Modelação | 23/04/2026 | Comparação de algoritmos e métricas. |
 | M4: Finalização| [Data] | Pitch e Relatório Final. |  
 
 ## 8. Referências
