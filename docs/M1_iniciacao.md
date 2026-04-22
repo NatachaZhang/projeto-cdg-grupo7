@@ -1,7 +1,9 @@
 # Milestone 1: Iniciação e Definição do Projeto
+
 ## 1. Descrição Detalhada do Problema
 Este projeto insere-se no setor imobiliário, onde o preço de um imóvel depende de múltiplos fatores tais como, localização, condições socioeconómicas da zona, qualidade do ambiente, acessos, e características físicas (ex.: número de divisões, idade do imóvel, etc.).
 Atualmente entidades como agências imobiliárias, bancos (crédito habitação), seguradoras, investidores e plataformas digitais precisam de estimativas consistentes para suportar decisões rápidas e reduzir risco.
+
 ## 2. Objetivos SMART
 *Defina os objetivos do projeto seguindo a lógica SMART (Específico, Mensurável, Atingível,
 Relevante e Temporal):*
@@ -12,16 +14,19 @@ Relevante e Temporal):*
 2. O modelo consegue distinguir o efeito direto da criminalidade (CRIM) no valor habitacional do efeito mediado pelo estatuto socioeconómico (LSTAT), e em que medida a criminalidade constitui um preditor autónomo ou reflete as condições do bairro?
 3. Como é que o modelo capta a relação entre a qualidade dos recursos educativos (PTRATIO) e o valor das habitações, e esse efeito é uniforme ao longo da distribuição de preços ou concentra-se em determinados segmentos do mercado?
 4. O modelo identifica perfis distintos de outliers em MEDV, tanto nos valores extremamente elevados como nos mais baixos, e que combinação de variáveis explica esses casos atípicos, de acordo com o que o modelo aprendeu?
+   
 ## 3. Metodologia de Gestão (PBL)
 * **Divisão de Tarefas:**
  * **Diana Figueiredo:** Responsável pela Engenharia de Dados.
  * **Natacha Zhang:** Responsável pela Modelação Estatística.
  * **Sofia Tanganho:** Responsável pela Visualização e Documentação.
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
+  
 ## 4. Análise de Viabilidade dos Dados
 * **Disponibilidade:** Os dados encontram-se descarregados e armazenados numa base de dados em formato CSV.
 * **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O conjunto de dados (_dataset_) apenas possui variáveis numéricas.
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
+  
 ## 5. Dicionário de Dados 
 | **Variável** | **Tipo de Váriável** | **Valores** | **Descrição** |
 | :--- | :--- | :--- | :--- |
@@ -39,14 +44,16 @@ Relevante e Temporal):*
 |**B**| Numéria Contínua | Valores decimais entre [0.32, 396.90] | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
 |**LSTAT**| Numéria Contínua | Valores decimais entre [1.73, 37.97] | Percentagem da população com baixo rendimento |
 |**MEDV**| Numéria Contínua | Valores decimais entre [5.0, 50.0] | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
-## 6. Cronograma Interno
+
+## 6. Referências
+* S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
+  
+## 7. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
 | :--- | :--- | :--- |
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
 | M2: Exploração | 24/03/2026 | Notebook de EDA e Dados Processados. |
 | M3: Modelação | [Data] | Comparação de algoritmos e métricas. |
 | M4: Finalização| [Data] | Pitch e Relatório Final. |  
-## 7. Referências
-* S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
 ---
 *Data de última atualização: [11/03/2026]* 
