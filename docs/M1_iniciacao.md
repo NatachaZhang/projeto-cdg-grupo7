@@ -27,7 +27,7 @@ Relevante e Temporal):*
 | :--- | :--- | :--- | :--- |
 |**CRIM**| Numéria Contínua | Valores decimais positivos | Taxa de criminalidade per capita por região |
 |**ZN**| Numéria Contínua | Valores decimais entre [0, 100] | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
-|**INDUS**| Numéria Contínua | Valores decimais entre | Proporção de hectares ocupados por zonas industriais que não são comércio por retalho por região |
+|**INDUS**| Numéria Contínua | Valores decimais entre | Proporção em hectares ocupados por zonas industriais que não são comércio por retalho, por região |
 |**CHAS**| Categórica Binária | 0 = Não margem do rio; 1 = Margem do rio Charles | Variável binária indicadora da fronteira com o rio Charles |
 |**NOX**| Numéria Contínua | Valores decimais entre [0.385, 0.871] | Concentração de óxidos de nitrogênio (partes por 10 milhões) |
 |**RM**| Numéria Contínua | Valores decimais entre [3.561, 8.780] | Número médio de quartos por residência |
