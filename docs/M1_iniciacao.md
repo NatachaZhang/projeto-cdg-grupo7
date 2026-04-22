@@ -26,8 +26,8 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
   
 ## 4. Análise de Viabilidade dos Dados
-* **Disponibilidade:** O conjunto de dados encontra-se armazenado em formato CSV no kaggle. Os dados estão acessíveis e prontos para utilização em ambiente de análise. 
-* **Características iniciais:** O conjunto de dados é composto por 560 observações e 14 variáveis, incluindo a variável preditiva. Todas as variáveis são de natureza numérica, o que facilita a aplicação de métodos estatísticos e de aprendizagem automática (_Machine Learning_).
+* **Disponibilidade:** O conjunto de dados encontra-se armazenado em formato CSV no [Kaggle](https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data). Os dados estão acessíveis e prontos para utilização em ambiente de análise. 
+* **Características iniciais:** O conjunto de dados é composto por 506 observações e 14 variáveis, incluindo a variável preditiva. Todas as variáveis são de natureza numérica, o que facilita a aplicação de métodos estatísticos e de aprendizagem automática (_Machine Learning_).
 * **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, não se verificou a existência de valores em falta. Foi igualmente confirmada a ausência de observações duplicadas. A estrutura dos dados encontra-se organizada em formato tabular, pois cada linha correspondente a uma observação e cada coluna a uma variável.
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
   
@@ -48,8 +48,9 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 |**`B`**| Numéria Contínua | Valores decimais entre [0.32, 396.90] | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
 |**`LSTAT`**| Numéria Contínua | Valores decimais entre [1.73, 37.97] | Percentagem da população com baixo rendimento |
 |**`MEDV`**| Numéria Contínua | Valores decimais entre [5.0, 50.0] | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
-  
-## 6. Cronograma Interno
+## 6. Síntese da Análise Inicial
+*
+## 7. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
 | :--- | :--- | :--- |
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
@@ -57,7 +58,7 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 | M3: Modelação | [Data] | Comparação de algoritmos e métricas. |
 | M4: Finalização| [Data] | Pitch e Relatório Final. |  
 
-## 7. Referências
+## 8. Referências
 * S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
 ---
 *Data de última atualização: [22/04/2026]* 
