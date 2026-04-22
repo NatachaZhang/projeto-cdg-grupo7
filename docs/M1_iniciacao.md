@@ -25,14 +25,14 @@ Relevante e Temporal):*
 ## 5. Dicionário de Dados 
 | **Variável** | **Tipo de Váriável** | **Valores** | **Descrição** |
 | :--- | :--- | :--- | :--- |
-|**CRIM**| Numéria Contínua | Valores decimais positivos | Taxa de criminalidade per capita por região |
+|**CRIM**| Numéria Contínua | Valores decimais entre [0.006320, 88.9762] | Taxa de criminalidade per capita por região |
 |**ZN**| Numéria Contínua | Valores decimais entre [0, 100] | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
-|**INDUS**| Numéria Contínua | Valores decimais entre  [0, 27.74] | Proporção em hectares ocupados por zonas industriais que não são comércio por retalho, por região |
+|**INDUS**| Numéria Contínua | Valores decimais entre  [0.46, 27.74] | Proporção em hectares ocupados por zonas industriais que não são comércio por retalho, por região |
 |**CHAS**| Categórica Binária | 0 = Não margem do rio; 1 = Margem do rio Charles | Variável binária indicadora da fronteira com o rio Charles |
 |**NOX**| Numéria Contínua | Valores decimais entre [0.385, 0.871] | Concentração de óxidos de nitrogênio (partes por 10 milhões) |
 |**RM**| Numéria Contínua | Valores decimais entre [3.561, 8.780] | Número médio de quartos por residência |
 |**AGE**| Numéria Contínua | Valores decimais entre [2.9, 100] | Proporção de unidades ocupadas por proprietários com imovéis construídos antes de 1940 |
-|**DIS**| Numéria Contínua | Valores decimais entre [1.130, 12.127] | Distâncias ponderadas até cinco centros de emprego de Boston |
+|**DIS**| Numéria Contínua | Valores decimais entre [1.1296, 12.1265] | Distâncias ponderadas até cinco centros de emprego de Boston |
 |**RAD**| Numérica Discreta | Valores inteiros entre [1, 24] | Índice de acessibilidade a rodovias radiais |
 |**TAX**| Numérica Discreta | Valores inteiros entre [187, 711] | Taxa de imposto predial integral por cada 10.000 dólares |
 |**PTRATIO**| Numéria Contínua | Valores decimais entre [12.6, 22.0] | Proporção entre o número de alunos e professores por cidade |
