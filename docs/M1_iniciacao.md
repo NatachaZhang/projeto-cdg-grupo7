@@ -44,16 +44,16 @@ Relevante e Temporal):*
 |**B**| Numéria Contínua | Valores decimais entre [0.32, 396.90] | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
 |**LSTAT**| Numéria Contínua | Valores decimais entre [1.73, 37.97] | Percentagem da população com baixo rendimento |
 |**MEDV**| Numéria Contínua | Valores decimais entre [5.0, 50.0] | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
-
-## 6. Referências
-* S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
   
-## 7. Cronograma Interno
+## 6. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
 | :--- | :--- | :--- |
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
 | M2: Exploração | 24/03/2026 | Notebook de EDA e Dados Processados. |
 | M3: Modelação | [Data] | Comparação de algoritmos e métricas. |
 | M4: Finalização| [Data] | Pitch e Relatório Final. |  
+
+## 7. Referências
+* S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
 ---
 *Data de última atualização: [11/03/2026]* 
