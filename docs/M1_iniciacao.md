@@ -26,8 +26,9 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
   
 ## 4. Análise de Viabilidade dos Dados
-* **Disponibilidade:** Os dados encontram-se descarregados e armazenados numa base de dados em formato CSV.
-* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, ou seja, não existem valores nulos. Verificou-se que não existem observações duplicadas. O conjunto de dados (_dataset_) apenas possui variáveis numéricas.
+* **Disponibilidade:** O conjunto de dados encontra-se armazenado em formato CSV no kaggle. Os dados estão acessíveis e prontos para utilização em ambiente de análise. 
+* **Características iniciais:** O conjunto de dados é composto por 560 observações e 14 variáveis, incluindo a variável preditiva. Todas as variáveis são de natureza numérica, o que facilita a aplicação de métodos estatísticos e de aprendizagem automática (_Machine Learning_).
+* **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, não se verificou a existência de valores em falta. Foi igualmente confirmada a ausência de observações duplicadas. A estrutura dos dados encontra-se organizada em formato tabular, pois cada linha correspondente a uma observação e cada coluna a uma variável.
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
   
 ## 5. Dicionário de Dados 
