@@ -25,20 +25,20 @@ Relevante e Temporal):*
 ## 5. Dicionário de Dados 
 | **Variável** | **Tipo de Váriável** | **Valores** | **Descrição** |
 | :--- | :--- | :--- | :--- |
-|**CRIM**|  |  | Taxa de criminalidade per capita por região |
-|**ZN**|  |  | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
-|**INDUS**|  |  | Proporção de hectares ocupados por zonas industriais que não são comércio por retalho por região |
-|**CHAS**|  |  | Variável binária indicadora da fronteira com o rio Charles |
-|**NOX**|  |  | Concentração de óxidos de nitrogênio (partes por 10 milhões) |
-|**RM**|  |  | Número médio de quartos por residência |
-|**AGE**|  |  | Proporção de unidades ocupadas por proprietários construídas antes de 1940 |
-|**DIS**|  |  | Distâncias ponderadas até cinco centros de emprego de Boston |
-|**RAD**|  |  | Índice de acessibilidade a rodovias radiais |
-|**TAX**|  |  | Taxa de imposto predial integral por cada 10.000 dólares |
-|**PTRATIO**|  |  | Proporção entre o número de alunos e professores por cidade |
-|**B**|  |  | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
-|**LSTAT**|  |  | Percentagem da população com baixo rendimento |
-|**MEDV**|  |  | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
+|**CRIM**| Numéria Contínua |  | Taxa de criminalidade per capita por região |
+|**ZN**| Numéria Contínua |  | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
+|**INDUS**| Numéria Contínua |  | Proporção de hectares ocupados por zonas industriais que não são comércio por retalho por região |
+|**CHAS**| Categórica Binária |  | Variável binária indicadora da fronteira com o rio Charles |
+|**NOX**| Numéria Contínua |  | Concentração de óxidos de nitrogênio (partes por 10 milhões) |
+|**RM**| Numéria Contínua |  | Número médio de quartos por residência |
+|**AGE**| Numéria Contínua |  | Proporção de unidades ocupadas por proprietários construídas antes de 1940 |
+|**DIS**| Numéria Contínua |  | Distâncias ponderadas até cinco centros de emprego de Boston |
+|**RAD**| Numérica Discreta |  | Índice de acessibilidade a rodovias radiais |
+|**TAX**| Numérica Discreta |  | Taxa de imposto predial integral por cada 10.000 dólares |
+|**PTRATIO**| Numéria Contínua |  | Proporção entre o número de alunos e professores por cidade |
+|**B**| Numéria Contínua |  | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
+|**LSTAT**| Numéria Contínua |  | Percentagem da população com baixo rendimento |
+|**MEDV**| Numéria Contínua |  | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
 ## 6. Cronograma Interno
 | Fase | Data Limite | Entregável Esperado |
 | :--- | :--- | :--- |
