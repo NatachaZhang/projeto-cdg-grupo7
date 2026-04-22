@@ -27,13 +27,17 @@ Para responder a este problema, recorre-se ao _Boston Housing Dataset_, composto
 * **Objetivo 1:** Criar um modelo de _Clustering_ para segmentar as habitações em perfis distintos com base nas suas características socioeconómicas, habitacionais e ambientais, validado pelo método do cotovelo e por um Coeficiente de Silhueta (>0.50), até ao Milestone 3.
 * **Objetivo 2:** Construir um modelo de previsão supervisionada do preço médio das habitações (`MEDV`), alcançando um R² superior a 0.80 e um RMSE inferior a 3.500 dólares, até ao Milestone 3.
 ### Perguntas de Investigação
-**1.** De que forma o modelo de regressão revela qua as condições socioeconómicas do bairro (`LSTAT`) condicionam o valor habitacional mais do que as características físicas da habitação (`RM`), que padrão descreve essa relação?
 
-**2.** O modelo consegue distinguir o efeito direto da criminalidade (`CRIM`) no valor habitacional do efeito mediado pelo estatuto socioeconómico (`LSTAT`), e em que medida a criminalidade constitui um preditor autónomo ou reflete as condições do bairro?
+As perguntas de investigação estruturam o enquadramento científico do estudo, orientando a análise empírica dos dados com o objetivo de identificar os principais determinantes do preço mediano das habitações (`MEDV`), avaliar a sua relevância estatística e preditiva e verificar a capacidade dos modelos desenvolvidos em captar os padrões que explicam as variações no valor habitacional.
 
-**3.** Como é que o modelo capta a relação entre a qualidade dos recursos educativos (`PTRATIO`) e o valor das habitações, e esse efeito é uniforme ao longo da distribuição de preços ou concentra-se em determinados segmentos do mercado?
+**1.** Que perfis distintos de habitações identifica o modelo de clustering, e de que forma diferem entre si nas variáveis socioeconómicas, habitacionais e ambientais?
 
-**4.** O modelo identifica perfis distintos de outliers em `MEDV`, tanto nos valores extremamente elevados como nos mais baixos, e que combinação de variáveis explica esses casos atípicos, de acordo com o que o modelo aprendeu? 
+**2.** Qual é a relação entre o estatuto socioeconómico do bairro (`LSTAT`) e o preço mediano das habitações (`MEDV`) no modelo de regressão?
+
+**3.** A taxa de criminalidade (`CRIM`) é um preditor relevante do preço das habitações (`MEDV`) quando considerada em conjunto com outras variáveis do bairro?
+
+**4.** Que variáveis caracterizam as habitações com os preços mais elevados e mais baixos identificadas pelo modelo?
+
 ### Fonte de Dados
 * **Dataset:** [Kaggle](https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data)
 * **Dimensão:** 506 linhas, 14 colunas
