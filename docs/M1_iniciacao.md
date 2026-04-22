@@ -45,6 +45,8 @@ Relevante e Temporal):*
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
 | M2: Exploração | 24/03/2026 | Notebook de EDA e Dados Processados. |
 | M3: Modelação | [Data] | Comparação de algoritmos e métricas. |
-| M4: Finalização| [Data] | Pitch e Relatório Final. |
+| M4: Finalização| [Data] | Pitch e Relatório Final. |  
+## 7. Referências
+* S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
 ---
 *Data de última atualização: [11/03/2026]* 
