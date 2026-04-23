@@ -24,9 +24,10 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
     
 #### 2.1.2. Modelos Candidatos 
 Entre os modelos candidatos de regressão, o Random Forest destacou-se como a melhor solução global, apresentando os menores valores de erro no conjunto de teste e o maior coeficiente de determinação. O XGBoost revelou desempenho muito elevado no treino, mas com uma discrepância significativa face ao teste, sugerindo sobreajuste. Já o SVR apresentou resultados inferiores em ambos os conjuntos, evidenciando sinais de subajuste. Assim, o Random Forest foi considerado o modelo mais equilibrado em termos de desempenho e capacidade de generalização.
-| Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | Gap RMSE | MAE (Treino) | MAE (Teste) | Gap MAE | R² (Treino) | R² (Teste) | Gap R² | | Notas |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- | :--- | :--- |  
-| Random Forest | `n_estimators=100`, `random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 |  0.97 | 0.83 | 0.14 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
+
+| Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | Gap RMSE | MAE (Treino) | MAE (Teste) | Gap MAE | R² (Treino) | R² (Teste) | Gap R² | Notas |  
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |   
+| Random Forest | `n_estimators=100`, `random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
 | XGBoost | `n_estimators=100`, `random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
 | SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
 
