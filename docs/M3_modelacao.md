@@ -86,7 +86,9 @@ DBSCAN: Pesquisa exaustiva com ParameterGrid sobre eps ∈ {0.3, 0.5, 0.7, 0.9, 
   
 ## 4. Avaliação do Modelo Final
 ### 4.1. Matriz de Confusão / Erros
-
+O modelo apresenta um resíduo médio de 0,1397, praticamente nulo, o que indica ausência de enviesamento sistemático. O desvio padrão dos resíduos é de 3,4482, revelando alguma dispersão em casos específicos.
+As maiores falhas concentram-se em habitações com MEDV real de 50,0k$ (valor máximo do dataset), onde o modelo subestima consistentemente. Isto deve-se ao facto de 50,0k$ ser um valor truncado no dataset original, não reflectindo o valor real dessas habitações.
+Nos restantes casos o modelo comporta-se de forma aceitável: em 51,3% dos casos o erro absoluto é inferior a 2k$ e em 87,5% é inferior a 5k$.
 
 ### 4.2. Importância dos Atributos (Feature Importance)
 O IAH_stand é de longe a variável mais determinante no Random Forest (59% da importância total), mas tem menor peso no XGBoost (28,5%), o que indica que o XGBoost distribui a importância de forma mais equilibrada entre as variáveis.
