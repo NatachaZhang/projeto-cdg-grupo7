@@ -57,10 +57,16 @@ A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mai
 | KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Modelo mais consistente, embora com menor capacidade de separação entre grupos |
 
 ## 3. Otimização (Tuning)
-*Descrevam como melhoraram o melhor modelo.*
+### 3.1. 
 * **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
 `max_depth` e `learning_rate`.")
 * **Melhoria obtida:** (p/ex.: "O F1-Score subiu de 0.85 para 0.88 após o ajuste.")
+
+### 3.2.
+* **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
+`max_depth` e `learning_rate`.")
+* **Melhoria obtida:** (p/ex.: "O F1-Score subiu de 0.85 para 0.88 após o ajuste.")
+  
 ## 4. Avaliação do Modelo Final
 ### 4.1. Matriz de Confusão / Erros
 *Analisem onde o modelo mais falha.*
@@ -74,4 +80,4 @@ A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mai
 *Justifiquem por que razão este modelo está pronto (ou não) para ser apresentado como solução
 final.*
 ---
-*Data de última atualização: [DD/MM/AAAA]*
+*Data de última atualização: [23/04/2026]*
