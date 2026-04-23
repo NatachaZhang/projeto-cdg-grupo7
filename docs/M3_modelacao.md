@@ -74,9 +74,9 @@ DBSCAN: Pesquisa exaustiva com ParameterGrid sobre eps ∈ {0.3, 0.5, 0.7, 0.9, 
 > **Análise:** (p/ex.: "O modelo ainda confunde a Classe A com a Classe B em 10% dos casos devido
 à semelhança nos atributos X e Y.")
 ### 4.2. Importância dos Atributos (Feature Importance)
-*Quais as variáveis que o modelo considerou mais importantes para decidir?*
-1. [Variável X]
-2. [Variável Y]
+O IAH_stand é de longe a variável mais determinante no Random Forest (59% da importância total), mas tem menor peso no XGBoost (28,5%), o que indica que o XGBoost distribui a importância de forma mais equilibrada entre as variáveis.
+O CHAS é praticamente ignorado pelo Random Forest (0,5%) mas é a segunda variável mais importante no XGBoost (14,8%), revelando que os dois modelos aprenderam padrões distintos nos dados.
+TAX_norm e INDUS_norm têm peso relevante no XGBoost (~14% cada), confirmando que essas variáveis influenciam significativamente o preço das habitações.
 ## 5. Conclusão da Fase de Modelação
 *Justifiquem por que razão este modelo está pronto (ou não) para ser apresentado como solução
 final.*
