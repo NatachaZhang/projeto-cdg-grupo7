@@ -29,13 +29,9 @@ dataset é desequilibrado e queremos evitar falsos negativos.")
 * **Algoritmo:** KMeans
 * **Justificação:** Escolhemos o KMeans como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
 * **Resultado:**
-  - Silhouette Treino: 0.3170
   - Silhouette Teste : 0.3325
-  - Calinski-Harabasz Treino: 185.2667
   - Calinski-Harabasz Teste : 131.5455
-  - Davies-Bouldin Treino: 0.9667
   - Davies-Bouldin Teste : 0.8541
-  - Clusters Treino  : 8
   - Clusters Teste   : 8
 
 #### 2.2.2 Modelos Candidatos
