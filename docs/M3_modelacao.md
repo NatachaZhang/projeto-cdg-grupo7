@@ -46,7 +46,7 @@ A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mai
 | Algoritmo | Parâmetros | Silhouette (Treino) | Silhouette (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- |
 | DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas com menor estabilidade e elevada sensibilidade ao ruído |
-| Agglomerative Clustering | `linkage='complete'`, `n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | presentou o melhor equilíbrio entre qualidade dos agrupamentos e estabilidade entre treino e teste |
+| Agglomerative Clustering | `linkage='complete'`, `n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | Apresenta o melhor equilíbrio entre qualidade dos agrupamentos e estabilidade entre treino e teste |
 | KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Modelo mais consistente, embora com menor capacidade de separação entre grupos |
 
 ## 3. Otimização (Tuning)
