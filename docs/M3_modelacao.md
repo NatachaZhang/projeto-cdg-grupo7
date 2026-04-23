@@ -27,8 +27,8 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
 
 | Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | Gap RMSE | MAE (Treino) | MAE (Teste) | Gap MAE | R² (Treino) | R² (Teste) | Gap R² | Notas |  
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |   
-| Random Forest | `n_estimators=100`, `random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
-| XGBoost | `n_estimators=100`, `random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
+| Random Forest | `n_estimators=100`<br>`random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
+| XGBoost | `n_estimators=100`<br>`random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
 | SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
 
 ### 2.2. Problemas Não Supervisionados
@@ -46,8 +46,8 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
 A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mais elevado de Silhouette no conjunto de teste. No entanto, o Agglomerative Clustering revelou maior estabilidade estrutural, ao manter o mesmo número de clusters em treino e teste e não apresentar pontos de ruído, o que o torna uma solução mais equilibrada do ponto de vista técnico e interpretativo.
 | Algoritmo | Parâmetros | Silhouette (Treino) | Silhouette (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- |
-| DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas com menor estabilidade e elevada sensibilidade ao ruído |
-| Agglomerative Clustering | `linkage='complete'`, `n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | Apresenta o melhor equilíbrio entre qualidade dos agrupamentos e estabilidade entre treino e teste |
+| DBSCAN | `eps=0.5`<br>`min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas com menor estabilidade e elevada sensibilidade ao ruído |
+| Agglomerative Clustering | `linkage='complete'`<br>`n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | Apresenta o melhor equilíbrio entre qualidade dos agrupamentos e estabilidade entre treino e teste |
 | KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Modelo mais consistente, embora com menor capacidade de separação entre grupos |
 
 ## 3. Otimização (Tuning)
