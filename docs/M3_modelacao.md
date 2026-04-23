@@ -18,11 +18,11 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 * **Algoritmo:** Regressão Linear Simples
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
-| Parâmetros | Treino | Teste |
+| Parâmetros | Treino | Teste | 
 | :--- | :--- | :--- |
 | RMSE: |  | 4.8757 |
-| MAE: |  | 3.5549|
-| R²: |  | 0.6810|
+| MAE: |  | 3.5549 |
+| R²: |  | 0.6810 |
     
 #### 2.1.2. Modelos Candidatos 
 Entre os modelos candidatos de regressão, o Random Forest destacou-se como a melhor solução global, apresentando os menores valores de erro no conjunto de teste e o maior coeficiente de determinação. O XGBoost revelou desempenho muito elevado no treino, mas com uma discrepância significativa face ao teste, sugerindo sobreajuste. Já o SVR apresentou resultados inferiores em ambos os conjuntos, evidenciando sinais de subajuste. Assim, o Random Forest foi considerado o modelo mais equilibrado em termos de desempenho e capacidade de generalização.
@@ -39,10 +39,12 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
 * **Algoritmo:** KMeans
 * **Justificação:** Escolhemos o KMeans como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
 * **Resultado:**
-  - Silhouette Teste : 0.3325
-  - Calinski-Harabasz Teste : 131.5455
-  - Davies-Bouldin Teste : 0.8541
-  - Clusters Teste   : 8
+| Parâmetros | Treino | Teste | 
+| :--- | :--- | :--- |
+| Silhouette |  | 0.3325 |
+| Calinski-Harabasz |  | 131.5455 |
+| Davies-Bouldin |  | 0.8541 |
+| Clusters |  | 8 |
 
 #### 2.2.2 Modelos Candidatos
 A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mais elevado de Silhouette no conjunto de teste. No entanto, o Agglomerative Clustering revelou maior estabilidade estrutural, ao manter o mesmo número de clusters em treino e teste e não apresentar pontos de ruído, o que o torna uma solução mais equilibrada do ponto de vista técnico e interpretativo.
