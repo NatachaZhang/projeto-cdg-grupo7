@@ -50,11 +50,12 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
 
 #### 2.2.2 Modelos Candidatos
 A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mais elevado de Silhouette no conjunto de teste. No entanto, o Agglomerative Clustering revelou maior estabilidade estrutural, ao manter o mesmo número de clusters em treino e teste e não apresentar pontos de ruído, o que o torna uma solução mais equilibrada do ponto de vista técnico e interpretativo.
-| Algoritmo | Parâmetros | Silhouette (Treino) | Silhouette (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- |
-| DBSCAN | `eps=0.5`<br>`min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas com menor estabilidade e elevada sensibilidade ao ruído |
-| Agglomerative Clustering | `linkage='complete'`<br>`n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | Apresenta o melhor equilíbrio entre qualidade dos agrupamentos e estabilidade entre treino e teste |
-| KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Modelo mais consistente, embora com menor capacidade de separação entre grupos |
+| Algoritmo | Parâmetros | Silhouette (Treino) | Silhouette (Teste) | Calinski-Harabasz (Treino) | Calinski-Harabasz (Teste) | Davies-Bouldin (Treino) | Davies-Bouldin (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
+|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
+| Baseline KMeans | `k=8` (default) | 0.3170 | 0.3325 | 185.2663 | 131.5455 | 0.9667 | 0.8541 | 8 | 8 | 0 | 0 | 0.0155 | Ponto de referência mínimo, silhouette abaixo de 0.50 em ambos os conjuntos |
+| DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 291.5607 | 286.4850 | 0.6758 | 0.2041 | 3 | 2 | 153 | 74 | 0.3815 | Melhor Silhouette no teste mas instável, clusters e ruído inconsistentes entre treino e teste |
+| Agglomerative Clustering | `linkage='complete`, `n_clusters=2` | 0.5889 | 0.7363 | 84.7915 | 21.4427 | 0.7157 | 0.1781 | 2 | 2 | 0 | 0 | 0.1474 | Boa qualidade mas Calinski muito diferente entre treino e teste, instabilidade moderada |
+| KMeans Otimizado | k=4 | 0.5545 | 0.5065 | 216.1761 | 118.9583 | 0.6457 | 0.8031 | 4 | 4 | 0 | 0 | 0.0481 | Modelo mais estável e consistente, menor Gap, sem ruído e Silhouette acima de 0.50 |
 
 ## 3. Otimização (Tuning)
 ### 3.1. 
