@@ -22,12 +22,13 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
   - MAE: 3.5549
   - R²: 0.6810
     
-#### 2.1.2. Modelos Candidatos    
-| Algoritmo | Parâmetros Base | RMSE (Treino) | RMSE (Teste) | MAE (Treino) | MAE (Teste) | R² (Treino) | R² (Teste) | Notas |
+#### 2.1.2. Modelos Candidatos 
+Entre os modelos candidatos de regressão, o Random Forest destacou-se como a melhor solução global, apresentando os menores valores de erro no conjunto de teste e o maior coeficiente de determinação. O XGBoost revelou desempenho muito elevado no treino, mas com uma discrepância significativa face ao teste, sugerindo sobreajuste. Já o SVR apresentou resultados inferiores em ambos os conjuntos, evidenciando sinais de subajuste. Assim, o Random Forest foi considerado o modelo mais equilibrado em termos de desempenho e capacidade de generalização.
+| Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | MAE (Treino) | MAE (Teste) | R² (Treino) | R² (Teste) | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- |
-| Random Forest | `n_estimators=100`, `random_state=42` | 1.66 | 3.58 | 1.14 | 2.55 |  0.97 | 0.83 |Melhor modelo global, vence nas 3 métricas em simultâneo com sobreajuste moderado |
-| XGBoost | `n_estimators=100`, `random_state=42` | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Sobreajuste severo, R² treino quase perfeito (0.999964) indica memorização dos dados de treino|
-| SVR | `kernel='rbf'` | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Underfitting, desempenho fraco em ambos os conjuntos, não captura a complexidade dos dados |
+| Random Forest | `n_estimators=100`, `random_state=42` | 1.66 | 3.58 | 1.14 | 2.55 |  0.97 | 0.83 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
+| XGBoost | `n_estimators=100`, `random_state=42` | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
+| SVR | `kernel='rbf'` | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
 
 ### 2.2. Problemas Não Supervisionados
 ### Modelos de Agrupamento (_Clustering_)
@@ -41,11 +42,12 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
   - Clusters Teste   : 8
 
 #### 2.2.2 Modelos Candidatos
-| Algoritmo | Parâmetros Base | Silhouette (Treino) | Silhouette (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
+A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mais elevado de Silhouette no conjunto de teste. No entanto, o Agglomerative Clustering revelou maior estabilidade estrutural, ao manter o mesmo número de clusters em treino e teste e não apresentar pontos de ruído, o que o torna uma solução mais equilibrada do ponto de vista técnico e interpretativo.
+| Algoritmo | Parâmetros | Silhouette (Treino) | Silhouette (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- |
-| DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas menos estável |
-| Agglomerative Clustering | `linkage='complete'`, `n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | Melhor equilíbrio entre qualidade e estabilidade|
-| KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Mais consistente, mas com menor separação dos grupos |
+| DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas com menor estabilidade e elevada sensibilidade ao ruído |
+| Agglomerative Clustering | `linkage='complete'`, `n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | presentou o melhor equilíbrio entre qualidade dos agrupamentos e estabilidade entre treino e teste |
+| KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Modelo mais consistente, embora com menor capacidade de separação entre grupos |
 
 ## 3. Otimização (Tuning)
 *Descrevam como melhoraram o melhor modelo.*
