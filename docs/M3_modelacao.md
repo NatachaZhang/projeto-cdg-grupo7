@@ -25,9 +25,9 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 #### 2.1.2. Modelos Candidatos    
 | Algoritmo | Parâmetros Base | RMSE (Treino) | RMSE (Teste) | MAE (Treino) | MAE (Teste) | R² (Treino) | R² (Teste) | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- |
-| Random Forest | n_estimators=100, random_state=42 | 1.66 | 3.58 | 1.14 | 2.55 |  0.97 | 0.83 |Melhor modelo global, vence nas 3 métricas em simultâneo com sobreajuste moderado |
-| XGBoost | n_estimators=100, random_state=42 | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Sobreajuste severo, R² treino quase perfeito (0.999964) indica memorização dos dados de treino|
-| SVR | kernel='rbf' | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Underfitting, desempenho fraco em ambos os conjuntos, não captura a complexidade dos dados |
+| Random Forest | `n_estimators=100`, `random_state=42` | 1.66 | 3.58 | 1.14 | 2.55 |  0.97 | 0.83 |Melhor modelo global, vence nas 3 métricas em simultâneo com sobreajuste moderado |
+| XGBoost | `n_estimators=100`, `random_state=42` | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Sobreajuste severo, R² treino quase perfeito (0.999964) indica memorização dos dados de treino|
+| SVR | `kernel='rbf'` | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Underfitting, desempenho fraco em ambos os conjuntos, não captura a complexidade dos dados |
 
 ### 2.2. Problemas Não Supervisionados
 ### Modelos de Agrupamento (_Clustering_)
@@ -41,11 +41,11 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
   - Clusters Teste   : 8
 
 #### 2.2.2 Modelos Candidatos
-| Algoritmo | Parâmetros Base | RMSE (Treino) | RMSE (Teste) | MAE (Treino) | MAE (Teste) | R² (Treino) | R² (Teste) | Notas |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- |
-| Random Forest | n_estimators=100, random_state=42 | 1.66 | 3.58 | 1.14 | 2.55 |  0.97 | 0.83 |Melhor modelo global, vence nas 3 métricas em simultâneo com sobreajuste moderado |
-| XGBoost | n_estimators=100, random_state=42 | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Sobreajuste severo, R² treino quase perfeito (0.999964) indica memorização dos dados de treino|
-| SVR | kernel='rbf' | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Underfitting, desempenho fraco em ambos os conjuntos, não captura a complexidade dos dados |
+| Algoritmo | Parâmetros Base | Silhouette (Treino) | Silhouette (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Gap Treino-Teste | Notas |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- | :--- | :--- |
+| DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 3 | 2 | 153 | 74 | 0.3815 | Melhor valor de silhueta no teste, mas menos estável |
+| Agglomerative Clustering | `linkage='complete'`, `n_clusters=2` | 0.5889 | 0.7363 | 2 | 2 | 0 | 0 | 0.1474 | Melhor equilíbrio entre qualidade e estabilidade|
+| KMeans otimizado | `k=4` | 0.5545 | 0.5065 | 4 | 4 |  0 | 0 | 0.0481 | Mais consistente, mas com menor separação dos grupos |
 
 ## 3. Otimização (Tuning)
 *Descrevam como melhoraram o melhor modelo.*
