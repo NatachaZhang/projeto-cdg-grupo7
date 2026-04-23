@@ -1,9 +1,14 @@
 # Milestone 3: Modelação e Avaliação
+
 ## 1. Estratégia de Modelação
-*Descrevam como prepararam os dados para os algoritmos.*
-* **Divisão do dataset:** Realizámos testes com duas divisões distintas do dataset, 80/20 e 70/30, com semente aleatória (random_state=42) fixa para garantir a reprodutibilidade dos resultados. A divisão 80/20 ficou com 404 amostras de treino e 102 de teste, enquanto a divisão 70/30 ficou com 354 amostras de treino e 152 de teste. Após comparação das métricas obtidas em ambas as divisões, verificou-se que a divisão 70/30 produziu melhores resultados globais superando todas as combinações testadas. Por este motivo, adotámos a divisão 70/30 como estratégia de validação para a fase de otimização, garantindo o isolamento total dos dados de avaliação para evitar fugas de informação (_data leakage_).
+### 1.1. Problemas Supervisionados (Modelos De Regressão)
+* **Divisão do _Dataset_:** Realizámos testes com duas divisões distintas do dataset, 80/20 e 70/30, com semente aleatória (random_state=42) fixa para garantir a reprodutibilidade dos resultados. A divisão 80/20 ficou com 404 amostras de treino e 102 de teste, enquanto a divisão 70/30 ficou com 354 amostras de treino e 152 de teste. Após comparação das métricas obtidas em ambas as divisões, verificou-se que a divisão 70/30 produziu melhores resultados globais superando todas as combinações testadas. Por este motivo, adotámos a divisão 70/30 como estratégia de validação para a fase de otimização, garantindo o isolamento total dos dados de avaliação para evitar fugas de informação (_data leakage_).
 * **Métrica de Sucesso:** (p/ex.: "A métrica principal escolhida foi o F1-Score, pois o nosso
 dataset é desequilibrado e queremos evitar falsos negativos.")
+
+### 1.2. Problemas Não Supervisionados (Modelos de Agrupamento (_Clustering_))
+* **Divisão do _Dataset_:**
+* **Métrica de Sucesso:**
 
 ## 2. Experiências Realizadas
 ### 2.1. Problemas Supervisionados
