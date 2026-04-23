@@ -43,10 +43,10 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
   
 | Parâmetros | Treino | Teste | 
 | :--- | :--- | :--- |
-| Silhouette |  | 0.3325 |
-| Calinski-Harabasz |  | 131.5455 |
-| Davies-Bouldin |  | 0.8541 |
-| Clusters |  | 8 |
+| Silhouette | 0.3170 | 0.3325 |
+| Calinski-Harabasz | 185.2667 | 131.5455 |
+| Davies-Bouldin | 0.9667 | 0.8541 |
+| Clusters | 8 | 8 |
 
 #### 2.2.2 Modelos Candidatos
 A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mais elevado de Silhouette no conjunto de teste. No entanto, o Agglomerative Clustering revelou maior estabilidade estrutural, ao manter o mesmo número de clusters em treino e teste e não apresentar pontos de ruído, o que o torna uma solução mais equilibrada do ponto de vista técnico e interpretativo.
