@@ -6,7 +6,8 @@
 dataset é desequilibrado e queremos evitar falsos negativos.")
 
 ## 2. Experiências Realizadas
-### 2.1. Problemas Supervisionados (Modelos De Regressão)
+### 2.1. Problemas Supervisionados
+### Modelos De Regressão
 #### 2.1.1. Modelo Baseline
 * **Algoritmo:** Regressão Linear Simples
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
@@ -22,10 +23,11 @@ dataset é desequilibrado e queremos evitar falsos negativos.")
 | XGBoost | n_estimators=100, random_state=42 | 0.06| 3.71 |0.04 | 2.72 | 0.99 | 0.82 | Sobreajuste severo, R² treino quase perfeito (0.999964) indica memorização dos dados de treino|
 | SVR | kernel='rbf' | 5.97 | 5.71 | 3.95 | 3.71 |  0.59 | 0.56 | Underfitting, desempenho fraco em ambos os conjuntos, não captura a complexidade dos dados |
 
-### 2.2. Problemas Não Supervisionados (Modelos de Agrupamento (_Clustering_)
+### 2.2. Problemas Não Supervisionados
+### Modelos de Agrupamento (_Clustering_)
 #### 2.2.1 Modelo Baseline
 * **Algoritmo:** KMeans
-* **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
+* **Justificação:** Escolhemos o KMeans como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
 * **Resultado:**
   - Silhouette Treino: 0.3170
   - Silhouette Teste : 0.3325
