@@ -18,6 +18,7 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 * **Algoritmo:** Regressão Linear Simples
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
+  
 | Parâmetros | Treino | Teste | 
 | :--- | :--- | :--- |
 | RMSE: |  | 4.8757 |
@@ -39,6 +40,7 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
 * **Algoritmo:** KMeans
 * **Justificação:** Escolhemos o KMeans como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
 * **Resultado:**
+  
 | Parâmetros | Treino | Teste | 
 | :--- | :--- | :--- |
 | Silhouette |  | 0.3325 |
