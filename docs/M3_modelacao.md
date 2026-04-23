@@ -3,13 +3,12 @@
 ## 1. Estratégia de Modelação
 ### 1.1. Problemas Supervisionados (Modelos De Regressão)
 * **Divisão do _Dataset_:** Realizámos testes com duas divisões distintas do dataset, 80/20 e 70/30, de forma aleatória (`random_state=42`) fixa para garantir a reprodutibilidade dos resultados. A divisão 80/20 ficou com 404 amostras de treino e 102 de teste, enquanto a divisão 70/30 ficou com 354 amostras de treino e 152 de teste. Após comparação das métricas obtidas em ambas as divisões, verificou-se que a divisão 70/30 produziu melhores resultados globais superando todas as combinações testadas. Por este motivo, adotámos a divisão 70/30 como estratégia de validação para a fase de otimização, garantindo o isolamento total dos dados de avaliação para evitar perdas de informação (_data leakage_).
-* **Métrica de Sucesso:** (p/ex.: "A métrica principal escolhida foi o F1-Score, pois o nosso
-dataset é desequilibrado e queremos evitar falsos negativos.")
+* **Métrica de Sucesso:** As métricas principais escolhidas foram o RMSE (Raiz do Erro Quadrático Médio) e o R², por se tratar de um problema de regressão com variável alvo contínua (MEDV). O RMSE foi privilegiado como métrica principal por penalizar erros grandes de forma proporcional, sendo particularmente adequado para prever valores monetários onde erros elevados têm impacto prático significativo, o Objetivo SMART 1 define um RMSE inferior a 3.500 dólares como critério de sucesso. O R² complementa a análise ao medir a proporção da variância do preço das habitações explicada pelo modelo, com o Objetivo 2 a definir um valor mínimo de 0.85 como critério de sucesso.
 
 ### 1.2. Problemas Não Supervisionados (Modelos de Agrupamento (_Clustering_))
 * **Divisão do _Dataset_:** Para a modelação com algoritmos de clustering, dividiu-se o dataset em 70% para treino e 30% para teste, com `random_state=42`, de forma a garantir a reprodutibilidade e avaliar a estabilidade dos agrupamentos em diferentes amostras.
 Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disponíveis, dado que estes algoritmos são sensíveis à escala e à distância entre observações.A avaliação foi feita através de métricas internas adequadas ao clustering, destacando-se o Coeficiente de Silhueta como métrica principal, complementado pelos índices Calinski-Harabasz e Davies-Bouldin, de modo a apoiar a escolha do modelo final com maior rigor.
-* **Métrica de Sucesso:**
+* **Métrica de Sucesso:** A métrica principal escolhida foi o Coeficiente de Silhueta por ser a mais adequada para avaliar simultaneamente a coesão interna de cada cluster e a separação entre grupos distintos, numa escala interpretável entre -1 e 1. O Objetivo SMART 2 define um Coeficiente de Silhueta superior a 0.50 como critério de sucesso, garantindo que os bairros segmentados formam grupos suficientemente coesos e distintos entre si. O índice Calinski-Harabasz e o Davies-Bouldin foram utilizados como métricas complementares para apoiar a escolha do modelo final com maior rigor técnico.
 
 ## 2. Experiências Realizadas
 ### 2.1. Resposta ao Objetivo SMART 1 (Modelos De Regressão) 
