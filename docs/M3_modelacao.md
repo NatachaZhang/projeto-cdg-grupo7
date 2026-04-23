@@ -86,9 +86,8 @@ DBSCAN: Pesquisa exaustiva com ParameterGrid sobre eps ∈ {0.3, 0.5, 0.7, 0.9, 
   
 ## 4. Avaliação do Modelo Final
 ### 4.1. Matriz de Confusão / Erros
-*Analisem onde o modelo mais falha.*
-> **Análise:** (p/ex.: "O modelo ainda confunde a Classe A com a Classe B em 10% dos casos devido
-à semelhança nos atributos X e Y.")
+
+
 ### 4.2. Importância dos Atributos (Feature Importance)
 O IAH_stand é de longe a variável mais determinante no Random Forest (59% da importância total), mas tem menor peso no XGBoost (28,5%), o que indica que o XGBoost distribui a importância de forma mais equilibrada entre as variáveis.
 O CHAS é praticamente ignorado pelo Random Forest (0,5%) mas é a segunda variável mais importante no XGBoost (14,8%), revelando que os dois modelos aprenderam padrões distintos nos dados.
