@@ -18,11 +18,11 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
   
-| Parâmetros | Treino | Teste | 
-| :--- | :--- | :--- |
-| RMSE: |  | 4.8757 |
-| MAE: |  | 3.5549 |
-| R²: |  | 0.6810 |
+| Parâmetros | Teste | 
+| :--- | :--- |
+| RMSE: | 4.8757 |
+| MAE: | 3.5549 |
+| R²: | 0.6810 |
     
 #### 2.1.2. Modelos Candidatos 
 Entre os modelos candidatos de regressão, o Random Forest destacou-se como a melhor solução global, apresentando os menores valores de erro no conjunto de teste e o maior coeficiente de determinação. O XGBoost revelou desempenho muito elevado no treino, mas com uma discrepância significativa face ao teste, sugerindo sobreajuste. Já o SVR apresentou resultados inferiores em ambos os conjuntos, evidenciando sinais de subajuste. Assim, o Random Forest foi considerado o modelo mais equilibrado em termos de desempenho e capacidade de generalização.
