@@ -12,9 +12,8 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 * **Métrica de Sucesso:**
 
 ## 2. Experiências Realizadas
-### 2.1. Problemas Supervisionados
-### Modelos De Regressão
-#### 2.1.1. Modelo Baseline
+### 2.1. Resposta ao Objetivo SMART 1 (Modelos De Regressão) 
+### 2.1.1. Modelo Baseline
 * **Algoritmo:** Regressão Linear Simples
 * **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
@@ -34,8 +33,7 @@ Entre os modelos candidatos de regressão, o Random Forest destacou-se como a me
 | XGBoost | `n_estimators=100`<br>`random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
 | SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
 
-### 2.2. Problemas Não Supervisionados
-### Modelos de Agrupamento (_Clustering_)
+### 2.2. Resposta ao Objetivo SMART 2 (Modelos de Agrupamento (_Clustering_))
 #### 2.2.1 Modelo Baseline
 * **Algoritmo:** KMeans
 * **Justificação:** Escolhemos o KMeans como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
@@ -58,12 +56,12 @@ A comparação dos modelos candidatos mostra que o DBSCAN apresentou o valor mai
 | KMeans Otimizado | k=4 | 0.5545 | 0.5065 | 216.1761 | 118.9583 | 0.6457 | 0.8031 | 4 | 4 | 0 | 0 | 0.0481 | Modelo mais estável e consistente, menor Gap, sem ruído e Silhouette acima de 0.50 |
 
 ## 3. Otimização (Tuning)
-### 3.1. 
+### 3.1. Resposta ao Objetivo SMART 1
 * **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
 `max_depth` e `learning_rate`.")
 * **Melhoria obtida:** (p/ex.: "O F1-Score subiu de 0.85 para 0.88 após o ajuste.")
 
-### 3.2.
+### 3.2. Resposta ao Objetivo SMART 2
 * **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
 `max_depth` e `learning_rate`.")
 * **Melhoria obtida:** (p/ex.: "O F1-Score subiu de 0.85 para 0.88 após o ajuste.")
