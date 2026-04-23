@@ -3,7 +3,7 @@
 ## 1. Estratégia de Modelação
 ### 1.1. Problemas Supervisionados (Modelos De Regressão)
 * **Divisão do _Dataset_:** Realizámos testes com duas divisões distintas do dataset, 80/20 e 70/30, de forma aleatória (`random_state=42`) fixa para garantir a reprodutibilidade dos resultados. A divisão 80/20 ficou com 404 amostras de treino e 102 de teste, enquanto a divisão 70/30 ficou com 354 amostras de treino e 152 de teste. Após comparação das métricas obtidas em ambas as divisões, verificou-se que a divisão 70/30 produziu melhores resultados globais superando todas as combinações testadas. Por este motivo, adotámos a divisão 70/30 como estratégia de validação para a fase de otimização, garantindo o isolamento total dos dados de avaliação para evitar perdas de informação (_data leakage_).
-* **Métrica de Sucesso:** As métricas principais escolhidas foram o RMSE (Raiz do Erro Quadrático Médio) e o R², por se tratar de um problema de regressão com variável alvo contínua (MEDV). O RMSE foi privilegiado como métrica principal por penalizar erros grandes de forma proporcional, sendo particularmente adequado para prever valores monetários onde erros elevados têm impacto prático significativo, o Objetivo SMART 1 define um RMSE inferior a 3.500 dólares como critério de sucesso. O R² complementa a análise ao medir a proporção da variância do preço das habitações explicada pelo modelo, com o Objetivo 2 a definir um valor mínimo de 0.85 como critério de sucesso.
+* **Métrica de Sucesso:** As métricas principais escolhidas foram o RMSE (Raiz do Erro Quadrático Médio) e o R², por se tratar de um problema de regressão com variável alvo contínua (`MEDV`). O RMSE foi privilegiado como métrica principal por penalizar erros grandes de forma proporcional, sendo particularmente adequado para prever valores monetários onde erros elevados têm impacto prático significativo, o Objetivo SMART 1 define um RMSE inferior a 3.500 dólares como critério de sucesso. O R² complementa a análise ao medir a proporção da variância do preço das habitações explicada pelo modelo, com o Objetivo SMART 1 a definir um valor mínimo de 0.85 como critério de sucesso.
 
 ### 1.2. Problemas Não Supervisionados (Modelos de Agrupamento (_Clustering_))
 * **Divisão do _Dataset_:** Para a modelação com algoritmos de clustering, dividiu-se o dataset em 70% para treino e 30% para teste, com `random_state=42`, de forma a garantir a reprodutibilidade e avaliar a estabilidade dos agrupamentos em diferentes amostras.
@@ -35,7 +35,7 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 ### 2.2. Resposta ao Objetivo SMART 2 (Modelos de Agrupamento (_Clustering_))
 #### 2.2.1 Modelo Baseline
 * **Algoritmo:** KMeans
-* **Justificação:** Escolhemos o KMeans como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
+* **Justificação:** Escolhemos o K-Means como linha de base por ser um algoritmo de agrupamento simples, eficiente e facilmente interpretável. A sua utilização permite estabelecer um ponto de comparação inicial para avaliar se modelos mais complexos conseguem melhorar a coesão e a separação dos grupos identificados. 
 * **Resultado:**
   
 | Parâmetros | Treino | Teste | 
