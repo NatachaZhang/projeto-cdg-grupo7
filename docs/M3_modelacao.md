@@ -59,14 +59,15 @@ A análise comparativa dos modelos de clustering testados permitiu identificar d
 ## 3. Otimização (Tuning)
 ### 3.1. Resposta ao Objetivo SMART 1
 * **Técnica Utilizada:** Utilizámos GridSearchCV (com validação cruzada de 5 folds) para o Random Forest e SVR, e RandomizedSearchCV para o XGBoost, ajustando hiperparâmetros como max_depth, learning_rate, n_estimators, C e epsilon.
-* **Melhoria obtida:** O Random Forest não registou qualquer melhoria após a otimização, os hiperparâmetros de base (max_depth=None, n_estimators=100, min_samples_split=2) já eram os ideais, o que indica que o modelo estava bem configurado por omissão.
+* **Melhoria obtida:** O Random Forest não registou qualquer melhoria após a otimização, os hiperparâmetros de base (max_depth=None , n_estimators=100 ,  min_samples_split=2) já eram os ideais, o que indica que o modelo estava bem configurado por omissão.
 O XGBoost foi o modelo que mais beneficiou da otimização em termos absolutos, onde o RMSE em 0,2592 e alcançou o melhor desempenho global (RMSE: 3,4510, R²: 0,8402).
 O SVR registou a maior redução absoluta do RMSE (−1,4178), mas continua a ser o modelo com pior desempenho dos três.
 
 ### 3.2. Resposta ao Objetivo SMART 2
-* **Técnica Utilizada:** (p/ex.: "Utilizámos GridSearchCV para ajustar os hiperparâmetros
-`max_depth` e `learning_rate`.")
-* **Melhoria obtida:** (p/ex.: "O F1-Score subiu de 0.85 para 0.88 após o ajuste.")
+* **Técnica Utilizada:** KMeans otimizado: Método do Cotovelo combinado com análise do Coeficiente de Silhueta para todos os valores de k entre 2 e 10, selecionando automaticamente o k com maior Coeficiente de Silhueta no conjunto de treino.
+Agglomerative Clustering: Pesquisa exaustiva com ParameterGrid sobre n_clusters ∈ {2, 3, ..., 10} e linkage ∈ {ward, complete, average}, totalizando 27 combinações testadas. Foi selecionada a combinação que maximizou o Coeficiente de Silhueta no conjunto de teste.
+DBSCAN: Pesquisa exaustiva com ParameterGrid sobre eps ∈ {0.3, 0.5, 0.7, 0.9, 1.1, 1.3} e min_samples ∈ {3, 5, 8, 10}, totalizando 24 combinações testadas, com seleção igualmente baseada no Coeficiente de Silhueta no conjunto de teste.
+* **Melhoria obtida:** O Silhouette Score do KMeans subiu de 0.3325 (baseline com k=8 default) para 0.5065 (k=4 otimizado), superando o objetivo de 0.50. O Agglomerative com linkage='complete' e k=2 atingiu 0.7363, sendo o modelo final selecionado pelo equilíbrio entre performance e estabilidade (gap treino/teste de apenas 0.1474 vs 0.3815 do DBSCAN).
   
 ## 4. Avaliação do Modelo Final
 ### 4.1. Matriz de Confusão / Erros
