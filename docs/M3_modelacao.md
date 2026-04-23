@@ -24,13 +24,20 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 | R²: | 0.6810 |
     
 #### 2.1.2. Modelos Candidatos 
-
+A análise comparativa dos 3 modelos de regressão testados permite extrair conclusões relavantes sobre o comportento de cada algoritmo face ao problema de previsão do valor mediano das habitações (`MEDV`).
 
 | Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | Gap RMSE | MAE (Treino) | MAE (Teste) | Gap MAE | R² (Treino) | R² (Teste) | Gap R² | Notas |  
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |   
 | Random Forest | `n_estimators=100`<br>`random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
 | XGBoost | `n_estimators=100`<br>`random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
 | SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
+O **Random Forest** revelou-se o modelo com melhor desempenho global no conjunto de teste, registando um RMSE de 3.58, um MAE de 2.55 e um R² de 0.83, o que significa que o modelo consegue explicar aproximadamente 83% da variância do preço das habitações. Embora se verifique um sobreajuste moderado, evidenciado pela discrepância entre o RMSE de treino (1.66) e o de teste (3.58), com um Gap de 1.92, este comportamento é esperado em algoritmos de ensemble baseados em árvores de decisão e não compromete a sua capacidade de generalização de forma significativa.
+
+O **XGBoost** apresentou resultados particularmente preocupantes do ponto de vista da generalização. Embora tenha registado um RMSE de treino quase nulo (0.06) e um R² de treino de 0.99, estes valores evidenciam um sobreajuste severo, o modelo memorizou os dados de treino em vez de aprender os padrões subjacentes. Esta conclusão é comprovada por um Gap de RMSE de 3.65 e pelo Gap de R² de 0.17, os mais elevados entre os três modelos testados, indicando uma capacidade de generalização claramente inferior à do Random Forest apesar do desempenho aparentemente superior no treino.
+
+O **SVR** demonstrou ser o modelo menos adequado para este problema, apresentando underfitting em ambos os conjuntos, com um RMSE de 5.97 no treino e 5.71 no teste e um R² de apenas 0.59 no treino e 0.56 no teste. Estes resultados sugerem que o SVR com parâmetros default não consegue capturar a complexidade das relações não-lineares presentes no dataset de Boston, nomeadamente a influência de variáveis como o IAH e o IQV no valor das habitações. Curiosamente, é o modelo que apresenta o menor Gap em todas as métricas, o que não reflete estabilidade mas sim uma limitada capacidade de aprendizagem em ambos os conjuntos.
+
+Em síntese, o Random Forest destaca-se como o modelo candidato mais equilibrado e tecnicamente sustentado, reunindo as melhores métricas no conjunto de teste e um nível de sobreajuste aceitável e corrigível através de otimização de hiperparâmetros, justificando a sua seleção para a fase de tuning que se segue.
 
 ### 2.2. Resposta ao Objetivo SMART 2 (Modelos de Agrupamento (_Clustering_))
 #### 2.2.1 Modelo Baseline
