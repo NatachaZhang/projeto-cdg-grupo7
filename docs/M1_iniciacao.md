@@ -34,22 +34,22 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
   
 ## 5. Dicionário de Dados 
-| **Variável** | **Tipo estatístico de dados** | **Valores** | **Descrição** |
+| **Variável** | **Tipo estatístico de dados** | **Entrevalo de Valores** | **Descrição** |
 | :--- | :--- | :--- | :--- |
-|**`CRIM`**| Numéria Contínua | Valores decimais entre [0.006320, 88.9762] | Taxa de criminalidade per capita por região |
-|**`ZN`**| Numéria Contínua | Valores decimais entre [0, 100] | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
-|**`INDUS`**| Numéria Contínua | Valores decimais entre  [0.46, 27.74] | Proporção em hectares ocupados por zonas industriais que não são comércio por retalho, por região |
+|**`CRIM`**| Numéria Contínua | [0.006320, 88.9762] | Taxa de criminalidade per capita por região |
+|**`ZN`**| Numéria Contínua | [0, 100] | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
+|**`INDUS`**| Numéria Contínua | [0.46, 27.74] | Proporção em hectares ocupados por zonas industriais que não são comércio por retalho, por região |
 |**`CHAS`**| Categórica Binária | 0 = Não margem do rio; 1 = Margem do rio Charles | Variável binária indicadora da fronteira com o rio Charles |
-|**`NOX`**| Numéria Contínua | Valores decimais entre [0.385, 0.871] | Concentração de óxidos de nitrogênio (partes por 10 milhões) |
-|**`RM`**| Numéria Contínua | Valores decimais entre [3.561, 8.780] | Número médio de quartos por residência |
-|**`AGE`**| Numéria Contínua | Valores decimais entre [2.9, 100] | Proporção de unidades ocupadas por proprietários com imovéis construídos antes de 1940 |
-|**`DIS`**| Numéria Contínua | Valores decimais entre [1.1296, 12.1265] | Distâncias ponderadas até cinco centros de emprego de Boston |
-|**`RAD`**| Numérica Discreta | Valores inteiros entre [1, 24] | Índice de acessibilidade a rodovias radiais |
-|**`TAX`**| Numérica Discreta | Valores inteiros entre [187, 711] | Taxa de imposto predial integral por cada 10.000 dólares |
-|**`PTRATIO`**| Numéria Contínua | Valores decimais entre [12.6, 22.0] | Proporção entre o número de alunos e professores por cidade |
-|**`B`**| Numéria Contínua | Valores decimais entre [0.32, 396.90] | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
-|**`LSTAT`**| Numéria Contínua | Valores decimais entre [1.73, 37.97] | Percentagem da população com baixo rendimento |
-|**`MEDV`**| Numéria Contínua | Valores decimais entre [5.0, 50.0] | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
+|**`NOX`**| Numéria Contínua | [0.385, 0.871] | Concentração de óxidos de nitrogênio (partes por 10 milhões) |
+|**`RM`**| Numéria Contínua | [3.561, 8.780] | Número médio de quartos por residência |
+|**`AGE`**| Numéria Contínua | [2.9, 100] | Proporção de unidades ocupadas por proprietários com imovéis construídos antes de 1940 |
+|**`DIS`**| Numéria Contínua | [1.1296, 12.1265] | Distâncias ponderadas até cinco centros de emprego de Boston |
+|**`RAD`**| Numérica Discreta | [1, 24] | Índice de acessibilidade a rodovias radiais |
+|**`TAX`**| Numérica Discreta | [187, 711] | Taxa de imposto predial integral por cada 10.000 dólares |
+|**`PTRATIO`**| Numéria Contínua | [12.6, 22.0] | Proporção entre o número de alunos e professores por cidade |
+|**`B`**| Numéria Contínua | [0.32, 396.90] | O resultado da equação B=1000(Bk - 0,63)^2, onde Bk é a proporção de negros por cidade |
+|**`LSTAT`**| Numéria Contínua | [1.73, 37.97] | Percentagem da população com baixo rendimento |
+|**`MEDV`**| Numéria Contínua | [5.0, 50.0] | Valor mediano de casas ocupadas pelos proprietários em milhares de dólares [k$] |
 ## 6. Síntese da Análise Inicial
 A fase da compreensão dos dados (_Data Understanding_) do processo CRISP-DM (_Cross-Industry Standard Process for Data Mining_) teve como objetivo caracterizar formalmente o conjunto de dados (_dataset_), avaliar a sua qualidade e integridade, e identificar propriedades relevantes para as fases subsequentes de preparação dos dados e modelação.  
 O dataset é composto por 506 observações e 14 variáveis, todas de natureza numérica, o que elimina a necessidade de codificação de variáveis categóricas e facilita a aplicação direta de algoritmos de aprendizagem automática (_Machine Learning_). Cada observação corresponde a um imóvel da região de Boston, descrita por um conjunto de características socioeconómicas, habitacionais e ambientais, e pela variável alvo (`MEDV`) , que representa o valor mediano das habitações em milhares de dólares.  
