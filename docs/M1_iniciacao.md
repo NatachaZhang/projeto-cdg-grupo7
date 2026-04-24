@@ -34,7 +34,7 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 * **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
   
 ## 5. Dicionário de Dados 
-| **Variável** | **Tipo estatístico de dados** | **Entrevalo de Valores** | **Descrição** |
+| **Variável** | **Tipo estatístico de dados** | **Intrevalo de Valores** | **Descrição** |
 | :--- | :--- | :--- | :--- |
 |**`CRIM`**| Numéria Contínua | [0.006320, 88.9762] | Taxa de criminalidade per capita por região |
 |**`ZN`**| Numéria Contínua | [0, 100] | Proporção de terrenos residenciais com lotes acima de 25.000 pés quadrados |
