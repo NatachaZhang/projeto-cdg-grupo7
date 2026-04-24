@@ -44,5 +44,7 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 
 A análise exploratória revelou que o preço das habitações (`MEDV`) é fortemente influenciado por fatores socioeconómicos, destacando-se a variável `LSTAT` como o principal preditor. Verificou-se também que o conjunto de dados apresenta boa qualidade, sem valores em falta, duplicados ou erros de inserção. Os outliers identificados foram considerados plausíveis e tratados através de técnicas de escalonamento. Conclui-se que os dados são adequados e suficientes para avançar para a fase de modelação.  
 
+## 6. Referências
+
 ---
 *Data de última atualização: [03/04/2026]* 
