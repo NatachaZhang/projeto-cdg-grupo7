@@ -28,7 +28,7 @@ Decidimos manter os valores atípicos (_outliers_) identificados, uma vez que n�
 * **Índice de Atratividade Habitacional (IAH):** foi criado para capturar numa única métrica o equilíbrio entre as características físicas da habitação e o contexto socioeconómico e urbano do bairro. A fórmula IAH = RM / (LSTAT × DIS) coloca no numerador o RM e no denominador o `LSTAT` e o `DIS`, garantindo que habitações maiores em bairros ricos e bem localizados produzam valores altos e vice-versa. O `IAH` não partilha variáveis com o `IQV`, assegurando que ambos os índices contribuem com informação complementar para a modelação. Após a sua criação, as variáveis originais `RM`, `LSTAT` e `DIS` foram removidas do conjunto de dados (_dataset_).
 ## 4. Dicionário de Dados Final (Pós-Processamento)
 *Listagem final das variáveis que serão entregues ao modelo na Fase 3.*
-| Atributo | Tipo Estatístico dos Dados | Intrevalo | Descrição | Método |
+| Atributo | Tipo Estatístico dos Dados | Intrevalo de Valores | Descrição | Método |
 | :--- | :--- | :--- |:--- |:--- |
 | `IQV` | Numérica Contínua | [4.45, 160.15] | Índice de Qualidade de Vida (Nova variável) | Engenharia de Atributos(criação manual - inversão e soma) |
 | `IAH` | Numérica Contínua | [0.03, 2.20] | Índice de Atratividade Habitacional (Nova variável) | Engenharia de Atributos (criação manual - divisão e multiplicação) |
