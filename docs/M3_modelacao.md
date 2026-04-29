@@ -28,7 +28,7 @@ A análise comparativa dos 3 modelos de regressão testados permite extrair conc
 
 | Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | Gap RMSE | MAE (Treino) | MAE (Teste) | Gap MAE | R² (Treino) | R² (Teste) | Gap R² | Notas |  
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |   
-| Random Forest | `n_estimators=100`<br>`random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Apresentou o melhor desempenho global no conjunto de teste, combinando menor erro e maior capacidade explicativa, apesar de evidenciar algum sobreajuste moderado |
+| Random Forest | `n_estimators=100`<br>`random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Melhor desempenho global no teste, com sobreajuste moderado aceitável |
 | XGBoost | `n_estimators=100`<br>`random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Revela excelente desempenho no treino, mas uma discrepância acentuada face ao teste, indicando sobreajuste e reduzida capacidade de generalização |
 | SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
 
