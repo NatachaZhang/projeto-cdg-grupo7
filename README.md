@@ -74,9 +74,11 @@ Foram aplicadas as seguintes técnicas de otimização:
 * MAE
 
 **Modelo Final:**
+
 O modelo final selecionado foi o Random Forest, escollhido por ter os meslhores resultados nas métricas utilizadas.
 
 **Modelos**
+
 Para o segundo objetivo SMART, foram testados algoritmos com o objetivo de segmentar as habitações em perfins distintos. Foram considerados os seguintes modelos:
 
 * KMeans (_baseline_)
