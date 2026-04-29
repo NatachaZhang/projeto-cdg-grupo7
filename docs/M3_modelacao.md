@@ -29,8 +29,8 @@ A análise comparativa dos 3 modelos de regressão testados permite extrair conc
 | Algoritmo | Parâmetros | RMSE (Treino) | RMSE (Teste) | Gap RMSE | MAE (Treino) | MAE (Teste) | Gap MAE | R² (Treino) | R² (Teste) | Gap R² | Notas |  
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |   
 | Random Forest | `n_estimators=100`<br>`random_state=42` | 1.66 | 3.58 | 1.92 | 1.14 | 2.55 | 1.41 | 0.97 | 0.83 | 0.14 | Melhor desempenho global no teste, com sobreajuste moderado aceitável |
-| XGBoost | `n_estimators=100`<br>`random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Sobreajuste severo — RMSE treino quase nulo (0.06) mas Gap de 3.65 no teste revela fraca capacidade de generalização. |
-| SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Apresenta desempenho inferior tanto no treino como no teste, sugerindo subajuste e limitada capacidade para captar a estrutura dos dadoss |
+| XGBoost | `n_estimators=100`<br>`random_state=42` | 0.06| 3.71 | 3.65 | 0.04 | 2.72 | 2.68 | 0.99 | 0.82 | 0.17 | Sobreajuste severo, RMSE treino quase nulo (0.06) mas Gap de 3.65 no teste revela fraca capacidade de generalização |
+| SVR | `kernel='rbf'` | 5.97 | 5.71 | 0.26 | 3.95 | 3.71 | 0.24 | 0.59 | 0.56 | 0.03 | Underfitting, desempenho fraco em ambos os conjuntos indicando incapacidade de capturar a complexidade dos dados |
 
 O **Random Forest** revelou-se o modelo com melhor desempenho global no conjunto de teste, registando um RMSE de 3.58, um MAE de 2.55 e um R² de 0.83, o que significa que o modelo consegue explicar aproximadamente 83% da variância do preço das habitações. Embora se verifique um sobreajuste moderado, evidenciado pela discrepância entre o RMSE de treino (1.66) e o de teste (3.58), com um Gap de 1.92, este comportamento é esperado em algoritmos de ensemble baseados em árvores de decisão e não compromete a sua capacidade de generalização de forma significativa.
 
