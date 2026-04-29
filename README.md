@@ -53,47 +53,47 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 ## 3. Modelação (Milestone 3)
 ### Abordagem Técnica
 
-* **Modelos**
-* No desenvolvimento da fase de modelação, foram testados algoritmos com o objetivo de prever o preço médio das habitações, de modo a dar resposta ao nosso primeiro objetivo SMART. Foram considerados os seguintes modelos:
+**Modelos**
+No desenvolvimento da fase de modelação, foram testados algoritmos com o objetivo de prever o preço médio das habitações, de modo a dar resposta ao nosso primeiro objetivo SMART. Foram considerados os seguintes modelos:
 
 * _Random Forest_
 * _XGBoost_
 * _SVR_
 
-* Foram aplicadas as seguintes técnicas de otimização:
-* 
+Foram aplicadas as seguintes técnicas de otimização:
+ 
 * Avaliação de Ajuste (_Fit_)
 * Sintonização Fina (_Hyperparameter Tuning_)
 * Validação de Robustez
 * Validação Cruzada (_K-Fold Cross-Validation_)
 
-* **Métricas Principais:**
+**Métricas Principais:**
 
 * RMSE (Raiz do Erro Quadrático Médio)
 * R²
 * MAE
 
-* **Modelo Final:**
-* O modelo final selecionado foi o Random Forest, escollhido por ter os meslhores resultados nas métricas utilizadas.
+**Modelo Final:**
+O modelo final selecionado foi o Random Forest, escollhido por ter os meslhores resultados nas métricas utilizadas.
 
-* **Modelos**
-* Para o segundo objetivo SMART, foram testados algoritmos com o objetivo de segmentar as habitações em perfins distintos. Foram considerados os seguintes modelos:
+**Modelos**
+Para o segundo objetivo SMART, foram testados algoritmos com o objetivo de segmentar as habitações em perfins distintos. Foram considerados os seguintes modelos:
 
 * KMeans (_baseline_)
 * KMeans otimizado
 * _Agglomerative Clustering_
 * DBSCAN
 
-* **Métricas Principais:**
-* 
+**Métricas Principais:**
+
 *  Coeficiente de Silhueta (_Silhouette_)
 * _Calinski-Harabasz_
 * _Davies_bouldin_
 * _Clusters_
 
-* **Modelo Final:**
+**Modelo Final:**
 
-* O modelo final selecionado foi o KMeans Otimizado com k=4, que atingiu um Coeficiente de Silhueta de 0.5065 no conjunto de teste, cumprindo o critério de sucesso definido (_Silhouette_ > 0.50). Este modelo destacou-se pela sua estabilidade estrutural, número de clusters consistente entre treino e teste, ausência total de ruído e o menor Gap Treino-Teste registado (0.0481), tornando-o a solução mais equilibrada e reprodutível entre os algoritmos testados.
+O modelo final selecionado foi o KMeans Otimizado com k=4, que atingiu um Coeficiente de Silhueta de 0.5065 no conjunto de teste, cumprindo o critério de sucesso definido (_Silhouette_ > 0.50). Este modelo destacou-se pela sua estabilidade estrutural, número de clusters consistente entre treino e teste, ausência total de ruído e o menor Gap Treino-Teste registado (0.0481), tornando-o a solução mais equilibrada e reprodutível entre os algoritmos testados.
   
 ## 4. Finalização (Milestone 4)
 ### Resposta ao Problema
