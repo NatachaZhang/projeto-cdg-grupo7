@@ -53,7 +53,8 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 ## 3. Modelação (Milestone 3)
 ### Abordagem Técnica
 
-**Modelos**
+**Modelos Utilizados:**
+
 No desenvolvimento da fase de modelação, foram testados algoritmos com o objetivo de prever o preço médio das habitações, de modo a dar resposta ao nosso primeiro objetivo SMART. Foram considerados os seguintes modelos:
 
 * _Random Forest_
@@ -77,7 +78,7 @@ Foram aplicadas as seguintes técnicas de otimização:
 
 O modelo final selecionado foi o Random Forest, escollhido por ter os meslhores resultados nas métricas utilizadas.
 
-**Modelos**
+**Modelos Utilizados:**
 
 Para o segundo objetivo SMART, foram testados algoritmos com o objetivo de segmentar as habitações em perfins distintos. Foram considerados os seguintes modelos:
 
