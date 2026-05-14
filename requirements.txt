@@ -1,1 +1,6 @@
-
+As bibliotecas utilizadas nesta fase de modelação foram:
+  - **scikit-learn** — divisão dos dados (train_test_split), modelos de regressão (LinearRegression, RandomForestRegressor, SVR), métricas de avaliação (mean_squared_error, mean_absolute_error, r2_score) e pré-processamento (StandardScaler, MinMaxScaler)
+  - **xgboost** — algoritmo de gradient boosting para regressão (XGBRegressor)
+  - **matplotlib** — criação de gráficos e visualizações 
+- **seaborn** — visualizações estatísticas avançadas
+  - **scipy** — testes estatísticos (kstest, norm)
