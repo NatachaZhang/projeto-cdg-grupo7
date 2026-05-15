@@ -2,9 +2,9 @@
 ## 1. Síntese de Resultados e Impacto
 
 * **O Problema Resolvido:** O Objetivo 1 consiste na construção de um modelo de previsão supervisionada do preço médio das habitações (MEDV), com a obtenção de um R² superior a 0,80 e um RMSE inferior a 3.500 dólares, até ao final do Milestone 3.
-Este objetivo foi parcialmente alcançado. O modelo atingiu um R² de 0,827, valor que supera o limiar definido de 0,80.
+Este objetivo foi parcialmente alcançado. O modelo atingiu um R² de 0,827, valor que supera o limiar definido de 0,80, no entanto o RMSE obtido foi de 3.594 dólares, ligeiramente acima do objetivo de 3.500 dólares.
 
-* **Interpretação dos Resultados:** O modelo demostra uma boa capacidade explicativa, pois consegue explicar 82.7% da variação do preço médio das casas. Contudo, o RMSE obtido foi de 3.594 dólares, ligeiramente acima do objetivo de 3.500 dólares o que significa que, em média, as previsões do modelo erram cerca de 3.594 dólares face ao preço real das habitações.
+* **Interpretação dos Resultados:** O modelo demostra uma boa capacidade explicativa, pois consegue explicar 82.7% da variação do preço médio das casas. Contudo, o RMSE de 3.594 dólares, significa que, em média, as previsões do modelo erram cerca de 3.594 dólares face ao preço real das habitações.
 
 * **Valor para o Utilizador/Negócio:** Com esta solução, agentes imobiliários, investidores e avaliadores podem obter uma estimativa automatizada e fundamentada do preço de uma habitação, com base em diversas características da habitação. Isto permite agilizar avaliações, identificar habitações subvalorizadas no mercado e apoiar decisões de compra ou venda com maior rigor quantitativo.
   
