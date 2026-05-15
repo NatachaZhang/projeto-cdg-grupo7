@@ -9,7 +9,7 @@ Este objetivo foi parcialmente alcançado. O modelo atingiu um R² de 0,827, val
 * **Valor para o Utilizador/Negócio:** Com esta solução, agentes imobiliários, investidores e avaliadores podem obter uma estimativa automatizada e fundamentada do preço de uma habitação, com base em diversas características da habitação. Isto permite agilizar avaliações, identificar habitações subvalorizadas no mercado e apoiar decisões de compra ou venda com maior rigor quantitativo.
   
 ## 2. Análise Crítica e Limitações
-> **Nota:** Identificar de forma honesta as fronteiras do projeto e onde o modelo pode falhar.
+
 * **Limitações dos Dados:** * (Ex: "O volume de dados para a classe X era reduzido, o que pode
 afetar a precisão em cenários específicos.")
 * **Limitações do Modelo:** Random Forest apresentou sinais evidentes de overfitting,apesar da sintonização fina de hiperparâmetros via GridSearchCV (realizando testes de diferentes valores de n_estimators, max_depth e min_samples_split), o modelo convergiu consistentemente para os parâmetros base (100 árvores, sem limitação de profundidade), sem melhorias adicionais de desempenho. A validação cruzada K-Fold (k=10) confirmou um RMSE médio de 4.026, ligeiramente acima do objetivo de 3.500 dólares, sugerindo que o desempenho obtido na divisão 70/30 pode ser parcialmente otimista.
