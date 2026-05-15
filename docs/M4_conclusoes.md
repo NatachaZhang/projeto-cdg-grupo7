@@ -12,8 +12,7 @@ Este objetivo foi parcialmente alcançado. O modelo atingiu um R² de 0,827, val
 > **Nota:** Identificar de forma honesta as fronteiras do projeto e onde o modelo pode falhar.
 * **Limitações dos Dados:** * (Ex: "O volume de dados para a classe X era reduzido, o que pode
 afetar a precisão em cenários específicos.")
-* **Limitações do Modelo:** * (Ex: "O modelo de associação foca-se em relações de co-ocorrência,
-mas não prova causalidade direta entre as variáveis.")
+* **Limitações do Modelo:** Random Forest apresentou sinais evidentes de overfitting,apesar da sintonização fina de hiperparâmetros via GridSearchCV (realizando testes de diferentes valores de n_estimators, max_depth e min_samples_split), o modelo convergiu consistentemente para os parâmetros base (100 árvores, sem limitação de profundidade), sem melhorias adicionais de desempenho. A validação cruzada K-Fold (k=10) confirmou um RMSE médio de 4.026, ligeiramente acima do objetivo de 3.500 dólares, sugerindo que o desempenho obtido na divisão 70/30 pode ser parcialmente otimista.
 * **Contextos de Falha:** * (Ex: "O modelo não é recomendado para situações de [Cenário Y], uma
 vez que os dados de treino não contemplavam essa variável externa.")
 ## 3. Considerações Éticas e de Viés
