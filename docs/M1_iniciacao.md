@@ -7,8 +7,6 @@ Em particular, podem existir fenómenos como multicolinearidade entre variáveis
 Assim, o problema consiste não apenas em prever com exatidão o valor mediano das habitações, mas também em compreender quais os fatores que mais influenciam esse valor e de que forma o fazem. Para tal, torna-se necessário aplicar e comparar diferentes técnicas de modelação, avaliando o seu desempenho através de métricas adequadas e garantindo a robustez dos resultados obtidos.
 
 ## 2. Objetivos SMART
-*Defina os objetivos do projeto seguindo a lógica SMART (Específico, Mensurável, Atingível,
-Relevante e Temporal):*
 1. **Objetivo 1:** Construir um modelo de previsão supervisionada do preço médio das habitações (`MEDV`), alcançando um R² superior a 0.80 e um RMSE inferior a 3.500 dólares, até ao final do Milestone 3.
 2. **Objetivo 2:** Criar um modelo de agrupamento para segmentar as habitações em perfis distintos com base nas suas características socioeconómicas, habitacionais e ambientais, validado pelo método do cotovelo e por um Coeficiente de Silhueta (>0.50), até ao final do  Milestone 3.
 ### Perguntas de Investigação
@@ -17,7 +15,7 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 
 1. Que perfis distintos de habitações identifica o modelo de clustering, e de que forma diferem entre si nas variáveis socioeconómicas, habitacionais e ambientais?
 2. Qual é a relação entre o estatuto socioeconómico do bairro (`LSTAT`) e o preço mediano das habitações (`MEDV`) no modelo de regressão?
-3. A taxa de criminalidade (`CRIM`) é um preditor relevante do preço das habitações (`MEDV`) quando considerada em conjunto com outras variáveis do bairro?
+3. A taxa de criminalidade (`CRIM`) é um preditor relevante do preço das habitações (`MEDV`) quando considerada em conjunto com outras variáveis?
 4. Que variáveis caracterizam as habitações com os preços mais elevados e mais baixos identificadas pelo modelo?
    
 ## 3. Metodologia de Gestão (PBL)
@@ -31,7 +29,7 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 * **Disponibilidade:** O conjunto de dados encontra-se armazenado em formato CSV no [Kaggle](https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data). Os dados estão acessíveis e prontos para utilização em ambiente de análise. 
 * **Características iniciais:** O conjunto de dados (_dataset_) é composto por 506 observações e 14 variáveis, incluindo a variável preditiva. Todas as variáveis são de natureza numérica, o que facilita a aplicação de métodos estatísticos e de aprendizagem automática (_Machine Learning_).
 * **Qualidade Inicial:** Todas as colunas apresentam valores preenchidos, não se verificou a existência de valores em falta. Foi igualmente confirmada a ausência de observações duplicadas. A estrutura dos dados encontra-se organizada em formato tabular, pois cada linha correspondente a uma observação e cada coluna a uma variável.
-* **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o RGPD.
+* **Ética:** O conjunto de dados (_dataset_) não contém dados pessoais identificáveis e encontra-se anonimizado, cumprindo o Regulamento Geral de Proteção de Dados.
   
 ## 5. Dicionário de Dados 
 | **Variável** | **Tipo estatístico de dados** | **Intrevalo de Valores** | **Descrição** |
@@ -63,10 +61,10 @@ Em síntese, o conjunto de dados (_dataset_) apresenta uma dimensão razoável p
 | M1: Iniciação | 24/02/2026 | Repositório estruturado e Plano de Projeto. |
 | M2: Exploração | 24/03/2026 | Notebook de EDA e Dados Processados. |
 | M3: Modelação | 23/04/2026 | Comparação de algoritmos e métricas. |
-| M4: Finalização| [Data] | Pitch e Relatório Final. |  
+| M4: Finalização| [18/05/2026] | Pitch e Relatório Final. |  
 
 ## 8. Referências
 * S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
 * Wirth, R., & Hipp, J. (n.d.). CRISP-DM: Towards a Standard Process Model for Data Mining. Retrieved April 22, 2026, from https://www.cs.unibo.it/~danilo.montesi/CBD/Beatriz/10.1.1.198.5133.pdf
 ---
-*Data de última atualização: [22/04/2026]* 
+*Data de última atualização: [16/05/2026]* 
