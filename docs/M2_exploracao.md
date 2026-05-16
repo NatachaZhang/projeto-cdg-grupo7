@@ -29,7 +29,7 @@ Adicionalmente, a variável `RAD` foi removida do conjunto de preditores por apr
 ### 3.3. Escalonamento das Novas Variáveis
 Após a criação de novos atributos procedeu-se ao escalonamento das novas variáveis. Dado que tanto `IQV` como o `IAH` apresentam valores atípicos (_outliers_), foi aplicada a padronização (_StandardScaler_) a ambas as variáveis.
 ## 4. Dicionário de Dados Final (Pós-Processamento)
-| Atributo | Tipo Estatístico dos Dados | Intrevalo de Valores | Descrição | Método |
+| Atributo | Tipo Estatístico dos Dados | Intervalo de Valores | Descrição | Método |
 | :--- | :--- | :--- |:--- |:--- |
 | `IQV` | Numérica Contínua | [4.45, 160.15] | Índice de Qualidade de Vida (Nova variável) | Engenharia de Atributos(criação manual - inversão e soma) |
 | `IAH` | Numérica Contínua | [0.03, 2.20] | Índice de Atratividade Habitacional (Nova variável) | Engenharia de Atributos (criação manual - divisão e multiplicação) |
