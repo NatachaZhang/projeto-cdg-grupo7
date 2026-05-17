@@ -53,7 +53,7 @@ Em síntese, o Random Forest destaca-se como o modelo candidato mais equilibrado
 | Davies-Bouldin | 0.9667 | 0.8541 |
 | Clusters | 8 | 8 |
 
-KMeans, com k=8 (parâmetro _default_), serviu como ponto de referência mínimo para a comparação. Os resultados obtidos foram claramente insuficientes, com um Coeficiente de Silhueta de 0.3170 no treino e 0.3325 no teste, ambos abaixo do critério de sucesso definido no Objetivo 2 (Silhueta > 0.50), confirmando que a configuração _default_ não produz agrupamentos com qualidade aceitável para o problema em análise.
+KMeans, com 8 agrupamentos (-clusters_) (parâmetro _default_), serviu como ponto de referência mínimo para a comparação. Os resultados obtidos foram claramente insuficientes, com um Coeficiente de Silhueta de 0.3170 no treino e 0.3325 no teste, ambos abaixo do critério de sucesso definido no Objetivo 2 (Silhueta > 0.50), confirmando que a configuração _default_ não produz agrupamentos com qualidade aceitável para o problema em análise.
 
 #### 2.2.2 Modelos Candidatos
 A análise comparativa dos quatro modelos de clustering testados permite extrair conclusões relevantes sobre o comportamento de cada algoritmo face ao problema de segmentação dos bairros de Boston.
