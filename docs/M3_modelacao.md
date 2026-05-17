@@ -53,39 +53,33 @@ Em síntese, o Random Forest destaca-se como o modelo candidato mais equilibrado
 | Davies-Bouldin | 0.9667 | 0.8541 |
 | Clusters | 8 | 8 |
 
-KMeans, com 8 agrupamentos (-clusters_) (parâmetro _default_), serviu como ponto de referência mínimo para a comparação. Os resultados obtidos foram claramente insuficientes, com um Coeficiente de Silhueta de 0.3170 no treino e 0.3325 no teste, ambos abaixo do critério de sucesso definido no Objetivo 2 (Silhueta > 0.50), confirmando que a configuração _default_ não produz agrupamentos com qualidade aceitável para o problema em análise.
+KMeans, com 8 agrupamentos (_clusters_) (parâmetro _default_), serviu como ponto de referência mínimo para a comparação. Os resultados obtidos foram claramente insuficientes, com um Coeficiente de Silhueta de 0.3170 no treino e 0.3325 no teste, ambos abaixo do critério de sucesso definido no Objetivo 2 (Silhueta > 0.50), confirmando que a configuração _default_ não produz agrupamentos com qualidade aceitável para o problema em análise.
 
 #### 2.2.2 Modelos Candidatos
 A análise comparativa dos quatro modelos de clustering testados permite extrair conclusões relevantes sobre o comportamento de cada algoritmo face ao problema de segmentação dos bairros de Boston.
 
 | Algoritmo | Parâmetros | Silhouette (Treino) | Silhouette (Teste) | Calinski-Harabasz (Treino) | Calinski-Harabasz (Teste) | Davies-Bouldin (Treino) | Davies-Bouldin (Teste) | Nº Clusters (Treino) | Nº Clusters (Teste) | Ruído (Treino) | Ruído (Teste) | Notas |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
-| Baseline KMeans | `k=8` (default) | 0.3170 | 0.3325 | 185.2663 | 131.5455 | 0.9667 | 0.8541 | 8 | 8 | 0 | 0 | Ponto de referência mínimo, silhouette abaixo de 0.50 em ambos os conjuntos |
+| Baseline KMeans | `k=8` (default) | 0.3170 | 0.3325 | 185.2667 | 131.5455 | 0.9667 | 0.8541 | 8 | 8 | 0 | 0 | Ponto de referência mínimo, silhouette abaixo de 0.50 em ambos os conjuntos |
 | DBSCAN | `eps=0.5`, `min_samples=8` | 0.4178 | 0.7993 | 291.5607 | 286.4850 | 0.6758 | 0.2041 | 3 | 2 | 153 | 74 | Melhor Silhouette no teste mas instável, clusters e ruído inconsistentes entre treino e teste |
 | Agglomerative Clustering | `linkage='complete`, `n_clusters=2` | 0.5889 | 0.7363 | 84.7915 | 21.4427 | 0.7157 | 0.1781 | 2 | 2 | 0 | 0 | Boa qualidade mas Calinski muito diferente entre treino e teste, instabilidade moderada |
 | KMeans Otimizado | k=4 | 0.5545 | 0.5065 | 216.1761 | 118.9583 | 0.6457 | 0.8031 | 4 | 4 | 0 | 0 | Modelo mais estável e consistente, menor Gap, sem ruído e Silhouette acima de 0.50 |
 
 O **DBSCAN**, com eps=0.5 e min_samples=8, registou o valor mais elevado de Silhueta no conjunto de teste (0.7993) e os melhores índices Calinski-Harabasz em ambos os conjuntos (291.5607 no treino e 286.4850 no teste), sugerindo uma boa densidade e separação dos grupos nesse subconjunto. Contudo, a análise mais detalhada revelou limitações críticas que inviabilizam a sua adoção como modelo final: o número de clusters variou entre treino (3) e teste (2), o volume de ruído foi consideravelmente elevado, 153 observações no treino e 74 no teste, e o índice Davies-Bouldin apresentou uma discrepância acentuada entre treino (0.6758) e teste (0.2041), evidenciando uma instabilidade estrutural que compromete a generalização e interpretabilidade do modelo.
 
-O **Agrupamento Aglomerativo**, com `linkage='complete'` e n`_clusters=2`, apresentou resultados promissores em termos de coesão, com uma Silhueta de 0.5889 no treino e 0.7363 no teste, e a vantagem de não gerar qualquer ponto de ruído. No entanto, a discrepância observada no índice Calinski-Harabasz entre o treino (84.7915) e o teste (21.4427), uma redução de aproximadamente 75%, sugere que a separação entre os dois grupos identificados não se mantém consistente quando o modelo é aplicado a dados não vistos, representando uma limitação relevante do ponto de vista da robustez metodológica.
+O **Agrupamento Aglomerativo**, com `linkage='complete'` e `n_clusters=2`, apresentou resultados promissores em termos de coesão, com uma Silhueta de 0.5889 no treino e 0.7363 no teste, e a vantagem de não gerar qualquer ponto de ruído. No entanto, a discrepância observada no índice Calinski-Harabasz entre o treino (84.7915) e o teste (21.4427), uma redução de aproximadamente 75%, sugere que a separação entre os dois grupos identificados não se mantém consistente quando o modelo é aplicado a dados não vistos, representando uma limitação relevante do ponto de vista da robustez metodológica.
 
-O **KMeans Otimizado** com k=4 revelou-se a solução mais equilibrada e tecnicamente sustentada. Com um Coeficiente de Silhueta de 0.5545 no treino e 0.5065 no teste, ausência total de ruído em ambos os conjuntos e o número de clusters consistente entre treino (4) e teste (4), este modelo demonstra uma capacidade de generalização superior e estabilidade estrutural. O índice Calinski-Harabasz, embora registe uma redução entre treino (216.1761) e teste (118.9583), mantém-se em valores substancialmente superiores ao baseline, e o Davies-Bouldin permanece em níveis aceitáveis. Importa destacar que o Coeficiente de Silhueta no teste (0.5065) cumpre o critério de sucesso definido no Objetivo 1 do projeto (Silhueta > 0.50), validando a adequação desta solução ao problema em análise e justificando a sua seleção como modelo de clustering final.
+O **KMeans Otimizado** com k=4 revelou-se a solução mais equilibrada e tecnicamente sustentada. Com um Coeficiente de Silhueta de 0.5545 no treino e 0.5065 no teste, ausência total de ruído em ambos os conjuntos e o número de clusters consistente entre treino e teste, este modelo demonstra uma capacidade de generalização superior e estabilidade estrutural. O índice Calinski-Harabasz, embora registe uma redução entre treino (216.1761) e teste (118.9583), mantém-se em valores substancialmente superiores ao baseline, e o Davies-Bouldin permanece em níveis aceitáveis. Importa destacar que o Coeficiente de Silhueta no teste (0.5065) cumpre o critério de sucesso definido no Objetivo SMART 2 do projeto (Silhueta > 0.50), validando a adequação desta solução ao problema em análise e justificando a sua seleção como modelo de clustering final.
 
 ## 3. Otimização (Tuning)
 ### 3.1. Resposta ao Objetivo SMART 1
-* **Técnica Utilizada:** Utilizámos GridSearchCV (com validação cruzada de 5 folds) para o Random Forest e SVR, e RandomizedSearchCV para o XGBoost, ajustando hiperparâmetros como max_depth, learning_rate, n_estimators, C e epsilon.
+* **Técnica Utilizada:** Utilizámos GridSearchCV (com validação cruzada de 5 folds) para o Random Forest  ajustando os seguintes hiperparâmetros: n_estimators, max_depth e min_samples_split.
 * **Melhoria obtida:** O Random Forest não registou qualquer melhoria após a otimização, os hiperparâmetros de base (max_depth=None , n_estimators=100 ,  min_samples_split=2) já eram os ideais, o que indica que o modelo estava bem configurado por omissão.
-O XGBoost foi o modelo que mais beneficiou da otimização em termos absolutos, onde o RMSE em 0,2592 e alcançou o melhor desempenho global (RMSE: 3,4510, R²: 0,8402).
-O SVR registou a maior redução absoluta do RMSE (−1,4178), mas continua a ser o modelo com pior desempenho dos três.
-
 ### 3.2. Resposta ao Objetivo SMART 2
 * **Técnica Utilizada:** KMeans otimizado: Método do Cotovelo combinado com análise do Coeficiente de Silhueta para todos os valores de k entre 2 e 10, selecionando automaticamente o k com maior Coeficiente de Silhueta no conjunto de treino.
-Agglomerative Clustering: Pesquisa exaustiva com ParameterGrid sobre n_clusters ∈ {2, 3, ..., 10} e linkage ∈ {ward, complete, average}, totalizando 27 combinações testadas. Foi selecionada a combinação que maximizou o Coeficiente de Silhueta no conjunto de teste.
-DBSCAN: Pesquisa exaustiva com ParameterGrid sobre eps ∈ {0.3, 0.5, 0.7, 0.9, 1.1, 1.3} e min_samples ∈ {3, 5, 8, 10}, totalizando 24 combinações testadas, com seleção igualmente baseada no Coeficiente de Silhueta no conjunto de teste.
-* **Melhoria obtida:** O Silhouette Score do KMeans subiu de 0.3325 (baseline com k=8 default) para 0.5065 (k=4 otimizado), superando o objetivo de 0.50. O Agglomerative com linkage='complete' e k=2 atingiu 0.7363, sendo o modelo final selecionado pelo equilíbrio entre performance e estabilidade (gap treino/teste de apenas 0.1474 vs 0.3815 do DBSCAN).
-  
+* **Melhoria obtida:** O Silhouette Score do KMeans subiu de 0.3325 (baseline com k=8 default) para 0.5065 (k=4 otimizado), superando o objetivo de 0.50. .
 ## 4. Avaliação do Modelo Final
-### 4.1. Matriz de Confusão / Erros
+### 4.1. Erros
 O modelo apresenta um resíduo médio de 0,1397, praticamente nulo, o que indica ausência de enviesamento sistemático. O desvio padrão dos resíduos é de 3,4482, revelando alguma dispersão em casos específicos.
 As maiores falhas concentram-se em habitações com MEDV real de 50,0k$ (valor máximo do dataset), onde o modelo subestima consistentemente. Isto deve-se ao facto de 50,0k$ ser um valor truncado no dataset original, não reflectindo o valor real dessas habitações.
 Nos restantes casos o modelo comporta-se de forma aceitável: em 51,3% dos casos o erro absoluto é inferior a 2k$ e em 87,5% é inferior a 5k$.
