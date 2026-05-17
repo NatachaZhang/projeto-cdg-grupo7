@@ -31,15 +31,15 @@ Após a criação de novos atributos procedeu-se ao escalonamento das novas vari
 ## 4. Dicionário de Dados Final (Pós-Processamento)
 | Atributo | Tipo Estatístico dos Dados | Intervalo de Valores | Descrição | Método |
 | :--- | :--- | :--- |:--- |:--- |
-| `IQV` | Numérica Contínua | [4.45, 160.15] | Índice de Qualidade de Vida (Nova variável) | Engenharia de Atributos(criação manual - inversão e soma) |
+| `IQV` | Numérica Contínua | [1.45, 160.15] | Índice de Qualidade de Vida (Nova variável) | Engenharia de Atributos(criação manual - inversão e soma) |
 | `IAH` | Numérica Contínua | [0.03, 2.20] | Índice de Atratividade Habitacional (Nova variável) | Engenharia de Atributos (criação manual - divisão e multiplicação) |
-| `B_stand` | Numérica Contínua | [] | B após padronização | StandardScaler |
-| `ZN_stand` | Numérica Contínua | [] | ZN após padronização | StandardScaler |
+| `B_stand` | Numérica Contínua | [-3.91, 0.44] | B após padronização | StandardScaler |
+| `ZN_stand` | Numérica Contínua | [-0.49, 3.80] | ZN após padronização | StandardScaler |
 | `INDUS_norm` | Numérica Contínua | [0, 1] | INDUS após normalização | MinMaxScaler |
 | `AGE_norm` | Numérica Contínua | [0, 1] | AGE após normalização | MinMaxScaler |
 | `TAX_norm` | Numérica Contínua | [0, 1] | TAX após normalização | MinMaxScaler |
-| `IQV_stand` | Numérica Contínua | [] | IQV após padronização | StandardScaler |
-| `IAH_stand` | Numérica Contínua | [] | IAH após padronização | StandardScaler |
+| `IQV_stand` | Numérica Contínua | [-0.63, 9.15] | IQV após padronização | StandardScaler |
+| `IAH_stand` | Numérica Contínua | [-0.9, 9.2] | IAH após padronização | StandardScaler |
 
 ## 5. Conclusões da Fase de Exploração
 
