@@ -3,7 +3,7 @@
 ## 1. Estratégia de Modelação
 ### 1.1. Problemas Supervisionados (Modelos De Regressão)
 * **Divisão do _Dataset_:** Realizámos testes com duas divisões distintas do dataset, 80/20 e 70/30, de forma aleatória (`random_state=42`) fixa para garantir a reprodutibilidade dos resultados. A divisão 80/20 ficou com 404 amostras de treino e 102 de teste, enquanto a divisão 70/30 ficou com 354 amostras de treino e 152 de teste. Após comparação das métricas obtidas em ambas as divisões, verificou-se que a divisão 70/30 produziu melhores resultados globais superando todas as combinações testadas. Por este motivo, adotámos a divisão 70/30 como estratégia de validação para a fase de otimização, garantindo o isolamento total dos dados de avaliação para evitar perdas de informação (_data leakage_).
-* **Métrica de Sucesso:** As métricas principais escolhidas foram o RMSE (Raiz do Erro Quadrático Médio) e o R², por se tratar de um problema de regressão com variável alvo contínua (`MEDV`). O RMSE foi privilegiado como métrica principal por penalizar erros grandes de forma proporcional, sendo particularmente adequado para prever valores monetários onde erros elevados têm impacto prático significativo, o Objetivo SMART 1 define um RMSE inferior a 3.500 dólares como critério de sucesso. O R² complementa a análise ao medir a proporção da variância do preço das habitações explicada pelo modelo, com o Objetivo SMART 1 a definir um valor mínimo de 0.80 como critério de sucesso.
+* **Métrica de Sucesso:** As métricas principais para avaliar os modelos foram o R² (Coeficiente de Determinação), o RMSE (Raiz do erro quadrático médio) e o MAE (Erro absoluto médio), por se tratar de um problema de regressão com variável alvo contínua (`MEDV`). O R² foi a métrica determinante na avaliação do sucesso, que mede a percentagem da variação do preço das habitações explicada pelo modelo. O Objetivo SMART 1 estabelece um valor mínimo de 0.80 como critério de sucesso. O RMSE e o MAE surgem como métricas complementares para quantificar o erro de previsão em dólares: o RMSE é mais sensível a erros elevados, enquanto o MAE é mais robusto à presença de outliers. O Objetivo SMART 1 define ainda um limiar de RMSE inferior a 3.500 dólares.
 
 ### 1.2. Problemas Não Supervisionados (Modelos de Agrupamento (_Clustering_))
 * **Divisão do _Dataset_:** Para a modelação com algoritmos de clustering, dividiu-se o dataset em 70% para treino e 30% para teste, com `random_state=42`, de forma a garantir a reprodutibilidade e avaliar a estabilidade dos agrupamentos em diferentes amostras.
@@ -14,7 +14,7 @@ Foram privilegiadas as variáveis standardizadas e normalizadas, sempre que disp
 ### 2.1. Resposta ao Objetivo SMART 1 (Modelos De Regressão) 
 ### 2.1.1. Modelo Baseline
 * **Algoritmo:** Regressão Linear Simples
-* **Justificação:** Escolhemos a Regressão Linear como baseline por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
+* **Justificação:** Escolhemos a Regressão Linear como modelo de referência (_baseline_) por ser o modelo de regressão mais simples e interpretável, servindo como patamar mínimo de comparação para todos os modelos candidatos.  
 * **Resultado:**
   
 | Parâmetros | Teste | 
