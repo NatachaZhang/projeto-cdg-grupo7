@@ -23,8 +23,7 @@
 * **Privacidade:** O conjunto de dados (_dataset_) não contém qualquer identificador pessoal, sendo composto exclusivamente por características agregadas de zonas geográficas de Boston. Não existe qualquer risco de exposição de dados individuais ou violação de privacidade.
 * **Transparência:** A análise de importância de variáveis (_Feature Importance_) aplicada ao _Random Forest_ permitiu identificar que o Índice de Atratividade Habitacional, que combina a dimensão das habitações, o estatuto socioeconómico da população e a proximidade ao emprego,é a variável com maior peso nas previsões (59%), tornando o processo de decisão do modelo compreensível e justificável. No Problema 2, a caracterização dos dois segmentos com base nos valores médios das variáveis permite perceber de forma clara o que distingue cada grupo, sem necessidade de conhecimentos técnicos aprofundados.
 ## 4. Roadmap e Trabalhos Futuros
-1. **Melhoria Técnica:** (Ex: "Implementar técnicas de reamostragem (SMOTE) para lidar melhor
-com o desequilíbrio das classes.")
+1. **Melhoria Técnica:** A distribuição desigual entre os dois grupos de bairros reflete a realidade dos dados disponíveis. Uma análise mais equilibrada exigiria um conjunto de dados mais diversificado, com maior representação de zonas residenciais valorizadas.
 2. **Novas Variáveis:** (Ex: "Integrar dados meteorológicos ou sazonais para refinar as previsões
 de venda.")
 3. **Escalabilidade (Deployment):** (Ex: "Desenvolver uma interface web (Streamlit) para que o
