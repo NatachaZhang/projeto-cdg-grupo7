@@ -76,7 +76,7 @@ O **KMeans Otimizado** com k=4 revelou-se a solução mais equilibrada e tecnica
 * **Técnica Utilizada:** Utilizámos GridSearchCV (com validação cruzada de 5 folds) para o Random Forest  ajustando os seguintes hiperparâmetros: n_estimators, max_depth e min_samples_split.
 * **Melhoria obtida:** O Random Forest não registou qualquer melhoria após a otimização, os hiperparâmetros de base (max_depth=None , n_estimators=100 ,  min_samples_split=2) já eram os ideais, o que indica que o modelo estava bem configurado por omissão.
 ### 3.2. Resposta ao Objetivo SMART 2
-* **Técnica Utilizada:** KMeans otimizado: Método do Cotovelo combinado com análise do Coeficiente de Silhueta para todos os valores de k entre 2 e 10, selecionando automaticamente o k com maior Coeficiente de Silhueta no conjunto de treino.
+* **Técnica Utilizadea:** Foram avaliados três algoritmos de agrupamento: _KMeans_, _DBSCAN_ e _Agglomerative Clustering_. O KMeans com n_clusters=8 (valor por omissão do scikit-learn) serviu como modelo de referência, tendo sido otimizado posteriormente para k=4 através do Método do Cotovelo combinado com análise do Coeficiente de _Silhueta_ para valores de k entre 2 e 10. O _DBSCAN_ e o _Agglomerative Clustering_ foram ajustados desde o início. O modelo selecionado foi o _Agglomerative Clustering_ com k=2, por apresentar o Coeficiente de Silhueta acima do definido no Objetivo 2 (Silhueta > 0.50) e por não apresentar ruídos.
 * **Melhoria obtida:** O Silhouette Score do KMeans subiu de 0.3325 (baseline com k=8 default) para 0.5065 (k=4 otimizado), superando o objetivo de 0.50. .
 ## 4. Avaliação do Modelo Final
 ### 4.1. Erros
