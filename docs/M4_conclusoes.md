@@ -24,8 +24,7 @@
 * **Transparência:** A análise de importância de variáveis (_Feature Importance_) aplicada ao _Random Forest_ permitiu identificar que o Índice de Atratividade Habitacional, que combina a dimensão das habitações, o estatuto socioeconómico da população e a proximidade ao emprego,é a variável com maior peso nas previsões (59%), tornando o processo de decisão do modelo compreensível e justificável. No Problema 2, a caracterização dos dois segmentos com base nos valores médios das variáveis permite perceber de forma clara o que distingue cada grupo, sem necessidade de conhecimentos técnicos aprofundados.
 ## 4. Roadmap e Trabalhos Futuros
 1. **Melhoria Técnica:** A distribuição desigual entre os dois grupos de bairros reflete a realidade dos dados disponíveis. Uma análise mais equilibrada exigiria um conjunto de dados mais diversificado, com maior representação de zonas residenciais valorizadas.
-2. **Novas Variáveis:** (Ex: "Integrar dados meteorológicos ou sazonais para refinar as previsões
-de venda.")
+2. **Novas Variáveis:** Integrar informação adicional sobre cada zona, como proximidade a transportes públicos, escolas e espaços verdes, para tornar tanto a estimativa de preços como a classificação de bairros mais completa e representativa.
 3. **Escalabilidade (Deployment):** (Ex: "Desenvolver uma interface web (Streamlit) para que o
 modelo possa ser utilizado por utilizadores não-técnicos em tempo real.")
 ---
