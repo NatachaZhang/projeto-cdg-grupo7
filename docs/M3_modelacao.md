@@ -79,15 +79,12 @@ O **KMeans Otimizado** com k=4 revelou-se a solução mais equilibrada e tecnica
 * **Técnica Utilizadea:** Foram avaliados três algoritmos de agrupamento: _KMeans_, _DBSCAN_ e _Agglomerative Clustering_. O KMeans com n_clusters=8 (valor por omissão do scikit-learn) serviu como modelo de referência, tendo sido otimizado posteriormente para k=4 através do Método do Cotovelo combinado com análise do Coeficiente de _Silhueta_ para valores de k entre 2 e 10. O _DBSCAN_ e o _Agglomerative Clustering_ foram ajustados desde o início. O modelo selecionado foi o _Agglomerative Clustering_ com k=2, por apresentar o Coeficiente de Silhueta acima do definido no Objetivo 2 (Silhueta > 0.50) e por não apresentar ruídos.
 * **Melhoria obtida:** O Silhouette Score do KMeans subiu de 0.3325 (baseline com k=8 default) para 0.5065 (k=4 otimizado), superando o objetivo de 0.50. .
 ## 4. Avaliação do Modelo Final
-### 4.1. Erros
-O modelo apresenta um resíduo médio de 0,1397, praticamente nulo, o que indica ausência de enviesamento sistemático. O desvio padrão dos resíduos é de 3,4482, revelando alguma dispersão em casos específicos.
-As maiores falhas concentram-se em habitações com MEDV real de 50,0k$ (valor máximo do dataset), onde o modelo subestima consistentemente. Isto deve-se ao facto de 50,0k$ ser um valor truncado no dataset original, não reflectindo o valor real dessas habitações.
-Nos restantes casos o modelo comporta-se de forma aceitável: em 51,3% dos casos o erro absoluto é inferior a 2k$ e em 87,5% é inferior a 5k$.
-
+### 4.1. Erros / Resíduos
+A análise de resíduos do Random Forest revela um comportamento globalmente satisfatório. O resíduo médio de 0,0244 é praticamente nulo, indicando ausência de enviesamento sistemático. O desvio padrão de 3,5935 reflete alguma dispersão nos erros, com um erro máximo de 18,28k$ e um erro mínimo de -10,73k$.
+O gráfico de Previsto vs Real mostra que os pontos se distribuem próximos da linha de previsão perfeita, com maior dispersão para valores elevados de `MEDV`, sugerindo que o modelo tem mais dificuldade em prever habitações de valor mais alto. O gráfico de Resíduos vs Previstos não evidencia padrões sistemáticos, o que indica que os erros são maioritariamente aleatórios. A distribuição dos resíduos é aproximadamente centrada em zero, confirmando a ausência de enviesamento.
+Em termos práticos, 51,3% das previsões apresentam um erro inferior a 2k$ e 88,8% um erro inferior a 5k$, demonstrando que o modelo é preciso na grande maioria dos casos.
 ### 4.2. Importância dos Atributos (Feature Importance)
-O IAH_stand é de longe a variável mais determinante no Random Forest (59% da importância total), mas tem menor peso no XGBoost (28,5%), o que indica que o XGBoost distribui a importância de forma mais equilibrada entre as variáveis.
-O CHAS é praticamente ignorado pelo Random Forest (0,5%) mas é a segunda variável mais importante no XGBoost (14,8%), revelando que os dois modelos aprenderam padrões distintos nos dados.
-TAX_norm e INDUS_norm têm peso relevante no XGBoost (~14% cada), confirmando que essas variáveis influenciam significativamente o preço das habitações.
+A análise de importância de variáveis do _Random Forest_ revela que o `IAH_stand` é de longe a variável mais determinante, representando 59% da importância total. O `IQV_stand` surge em segundo lugar com 11.7%, seguido do `AGE_norm` (8.3%) e `INDUS_norm` (7.8%). As variáveis `TAX_norm` (6.0%) e `B_stand` (4.9%) têm um contributo moderado, enquanto `ZN_stand` (1.8%) e `CHAS` (0.5%) apresentam uma importância residual, sendo praticamente ignoradas pelo modelo.
 ## 5. Conclusão da Fase de Modelação
 A fase de modelação permitiu desenvolver e avaliar um conjunto diversificado de algoritmos, tanto no domínio da aprendizagem supervisionada como da não supervisionada, respondendo diretamente aos dois objetivos SMART definidos no início do projeto.
 
