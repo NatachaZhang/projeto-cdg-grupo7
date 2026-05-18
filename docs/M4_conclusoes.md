@@ -39,6 +39,15 @@ Numa perspetiva futura, a solução poderá evoluir para uma plataforma interati
 1. **Melhoria Técnica:** A distribuição desigual entre os dois grupos de bairros reflete a realidade dos dados disponíveis. Uma análise mais equilibrada exigiria um conjunto de dados mais diversificado, com maior representação de zonas residenciais valorizadas.
 2. **Novas Variáveis:** Integrar informação adicional sobre cada zona, como proximidade a transportes públicos, escolas e espaços verdes, para tornar tanto a estimativa de preços como a classificação de bairros mais completa e representativa.
 3. **Escalabilidade (Deployment):** Integrar as duas ferramentas numa solução única, onde ao inserir as características de uma habitação o utilizador recebe simultaneamente a estimativa de preço e o perfil do bairro correspondente, tornando a análise mais completa e acessível a qualquer pessoa.
+
+## 5. Conclusão Final 
+
+O desenvolvimento deste projeto permitiu demonstrar como técnicas de Ciência de Dados e do Machine Learning podem ser aplicadas ao mercado imobiliário para extrair conhecimento relevante a partir de dados urbanos e habitacionais. A utilização de modelos preditivos e técnicas de segmentação possibilitou não apenas estimar preços de habitações com elevada capacidade explicativa, mas também identificar diferentes perfis de bairros com características socioeconómicas e ambientais distintas.
+
+Os resultados obtidos evidenciam que modelos preditivos podem apoiar avaliações imobiliárias de forma consistente e fundamentada, enquanto as técnicas de segmentação permitem compreender melhor as diferenças entre zonas urbanas e identificar padrões associados à valorização habitacional e à qualidade de vida. Apesar das limitações identificadas, nomeadamente a reduzida dimensão e antiguidade do conjunto de dados, o projeto conseguiu atingir os principais objetivos definidos e demonstrar valor prático na interpretação e utilização dos resultados.
+
+Numa perspetiva futura, a integração destas soluções em plataformas interativas, alimentadas por dados atualizados em tempo real, poderá contribuir para análises imobiliárias mais acessíveis, transparentes e orientadas para apoio à decisão, reforçando o papel da Ciência de Dados na compreensão e planeamento do espaço urbano
+
 ---
 **Data de Conclusão:** 18/05/2026
 **Versão do Projeto:** v4.0 Final--- 
