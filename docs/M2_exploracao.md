@@ -79,5 +79,9 @@ Criámos duas novas variáveis para enriquecer a capacidade preditiva do modelo.
 
 ## 6. Referências
 
+Alonso, W. (1964). Location and Land Use: Toward a General Theory of Land Rent. Harvard University Press
+Géron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (2nd ed.). O'Reilly Media
+Little, R. J. A., & Rubin, D. B. (2002). Statistical Analysis with Missing Data (2nd ed.). Wiley
+
 ---
 *Data de última atualização: [18/05/2026]* 
