@@ -56,7 +56,7 @@ Após a criação de novos atributos procedeu-se ao escalonamento das novas vari
 
 
 ## 5. Conclusões da Fase de Exploração
-A fase de análise exploratória e engenharia de atributos foi conduzida de forma estruturada e coerente com o processo CRISP-DM, permitindo transformar o dataset de _Boston Housing_ num _input_ sólido e bem fundamentado para a fase de modelação.
+A fase de análise exploratória e engenharia de atributos foi conduzida de forma estruturada e coerente com o processo CRISP-DM, permitindo transformar o conjunto de dados (_dataset_) de _Boston Housing_ num _input_ sólido e bem fundamentado para a fase de modelação.
 
 **Qualidade dos dados e robustez da base de partida**  
 A verificação sistemática de valores nulos e de duplicados confirmou a ausência de qualquer problema de completude ou redundância. Este resultado elimina a necessidade de imputação uma fonte frequente de enviesamento em modelos preditivos quando mal aplicada (Little & Rubin, 2002), permitindo-nos avançar diretamente para a análise exploratória.
@@ -73,7 +73,7 @@ A matriz de correlação identificou dois pares críticos: `RAD` e `TAX` com r =
 **Escalonamento diferenciado e coerente**   
 Aplicámos StandardScaler às variáveis com _outliers_ (`CRIM`, `RM`, `LSTAT`, `DIS`, `PTRATIO`, `B`, `ZN`) e MinMaxScaler às restantes (`INDUS`, `NOX`, `AGE`, `RAD`, `TAX`). O _StandardScaler_ centra e escala pela variância, sendo mais robusto à presença de extremos; o _MinMaxScaler_ comprime para [0,1] e é adequado para distribuições mais uniformes (Géron, 2019). Esta distinção evita a aplicação cega de um único método e garante que o escalonamento respeita as características de cada variável.
 
-**Engenharia de atributos — IQV e IAH**  
+**Engenharia de atributos (IQV e IAH)**  
 Criámos duas novas variáveis para enriquecer a capacidade preditiva do modelo. O `IQV` foi construído por inversão e soma de `CRIM`, `NOX` e `PTRATIO`, garantindo que valores altos do índice correspondem a condições de vida favoráveis. A sua correlação com `MEDV` é moderada (r = 0.31), mas o índice agrega de forma coerente três variáveis com correlações individuais de −0.39 (`CRIM`), −0.43 (`NOX`) e −0.51 (`PTRATIO`), produzindo um indicador interpretável de qualidade urbana. O `IAH = RM / (LSTAT × DIS)` captura o rácio entre a atractividade física da habitação e a penalização socioeconómica e locacional, alinhando-se com a teoria de valor locacional em economia urbana (Alonso, 1964), obtendo uma correlação de 0.65 com `MEDV`. Este valor deve ser interpretado com cautela, dado que o índice incorpora `RM` (r = 0.70) e `LSTAT` (r = −0.74), variáveis que individualmente já apresentavam correlações elevadas com a variável alvo. Ambos os índices apresentam _outliers_ confirmados pelos _boxplots_, pelo que foram padronizados com _StandardScaler_, em coerência com as escolhas anteriores. O conjunto de dados  (_dataset_) final ficou com 9 variáveis preditoras e a variável alvo `MEDV`, exportado para `boston_processed.csv`.
 
 
