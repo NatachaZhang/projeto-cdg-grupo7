@@ -77,7 +77,7 @@ Foram aplicadas as seguintes técnicas de otimização:
 
 **Modelo Final:**
 
-O modelo final selecionado foi o Random Forest, escollhido por ter os meslhores resultados nas métricas utilizadas.
+O modelo final selecionado foi o Random Forest, escollhido por ter os melhores resultados nas métricas utilizadas.
 
 **Modelos Utilizados:**
 
