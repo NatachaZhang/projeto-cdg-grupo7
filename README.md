@@ -57,6 +57,7 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
 
 No desenvolvimento da fase de modelação, foram testados algoritmos com o objetivo de prever o preço médio das habitações, de modo a dar resposta ao nosso primeiro objetivo SMART. Foram considerados os seguintes modelos:
 
+* _Linear Regression_ (_Baseline_)
 * _Random Forest_
 * _XGBoost_
 * _SVR_
@@ -71,8 +72,8 @@ Foram aplicadas as seguintes técnicas de otimização:
 **Métricas Principais:**
 
 * RMSE (Raiz do Erro Quadrático Médio)
-* R²
-* MAE
+* R² (Coeficiente de Determinação)
+* MAE (erro Absoluto Médio)
 
 **Modelo Final:**
 
@@ -89,20 +90,21 @@ Para o segundo objetivo SMART, foram testados algoritmos com o objetivo de segme
 
 **Métricas Principais:**
 
-*  Coeficiente de Silhueta (_Silhouette_)
-* _Calinski-Harabasz_
-* _Davies_bouldin_
-* _Clusters_
+*  Coeficiente de Silhueta (_Silhouette_) - mede o grau de separação entre os grupos, quanto mais próximo de 1 melhor
+* _Calinski-Harabasz_ - avalia a compacidade e separação dos grupos, valores mais altos indicam melhor definição
+* _Davies_bouldin_ - mede a semelhança entre grupos, valores mais baixos indicam grupos mais distintos
 
 **Modelo Final:**
-
-O modelo final selecionado foi o KMeans Otimizado com k=4, que atingiu um Coeficiente de Silhueta de 0.5065 no conjunto de teste, cumprindo o critério de sucesso definido (_Silhouette_ > 0.50). Este modelo destacou-se pela sua estabilidade estrutural, número de clusters consistente entre treino e teste, ausência total de ruído e o menor Gap Treino-Teste registado (0.0481), tornando-o a solução mais equilibrada e reprodutível entre os algoritmos testados.
+O modelo final selecionado foi o _Agglomerative Clustering_, que atingiu um Coeficiente de _Silhueta_ de 0,7363 no conjunto de teste, cumprindo o critério de sucesso definido (_Silhouette_ > 0,50). Este modelo destacou-se por apresentar a segunda _Silhueta_ mais elevada no teste entre todos os algoritmos avaliados, sem gerar qualquer ponto de ruído e com um número de agrupamentos consistente entre treino e teste, tornando-o a solução mais equilibrada e reprodutível entre os algoritmos testados.
   
 ## 4. Finalização (Milestone 4)
 ### Resposta ao Problema
-[Resumo da solução e como ela gera valor para o negócio.]
+Foram desenvolvidos dois modelos de análise do mercado imobiliário de Boston, cada um respondendo a um objectivo distinto. O primeiro, baseado no algoritmo _Random Forest_, permite estimar automaticamente o valor mediano de uma habitação com base nas suas características socioeconómicas e ambientais, atingindo uma precisão de 84% e um erro médio de previsão de aproximadamente 3,5k$. Este modelo revela-se particularmente útil para apoiar decisões de compra, venda e investimento imobiliário, fornecendo estimativas fundamentadas e objectivas do valor de mercado.
+
+O segundo modelo, baseado no algoritmo _Agglomerative Clustering_, classifica as habitações em dois perfis distintos, "Zona Urbana Desvalorizada" e "Zona Residencial Valorizada". A "Zona Urbana Desvalorizada" agrupa a grande maioria das habitações, caracterizando-se por zonas com maior presença industrial, habitações mais antigas e maior carga fiscal. A "Zona Residencial Valorizada", embora composta por apenas 19 habitações, distingue-se pelos valores elevados de qualidade de vida e pela localização em zonas residenciais amplas com menor densidade industrial.
+Cada modelo aborda o mercado imobiliário de Boston sob uma perspectiva diferente, um preditiva, outro descritiva, contribuindo para uma compreensão mais abrangente e rigorosa do mercado.
 ### Recomendações de Inovação
-1. [Sugestão prática baseada nos resultados]
+1. Integrar as duas ferramentas numa solução única, onde ao inserir as características de uma habitação o utilizador recebe simultaneamente a estimativa de preço e o perfil do bairro correspondente, tornando a análise mais completa e acessível a qualquer pessoa.
 ## Como Reproduzir este Projeto
 1. Clone o repositório: `git clone [url-do-repo]`
 2. Instale as dependências: `pip install -r requirements.txt`
