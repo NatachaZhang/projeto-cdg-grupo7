@@ -110,7 +110,7 @@ Cada modelo aborda o mercado imobiliário de Boston sob uma perspectiva diferent
 2. Instale as dependências: `pip install -r requirements.txt`
 3. Execute os notebooks na pasta `notebooks/` seguindo a ordem numérica.
 ## 5. Video de Apresentação
- Apresentação em vídeo do projeto está disponível aqui:
+ Apresentação em vídeo do projeto está disponível aqui: https://drive.google.com/drive/folders/1fu5T1ZJVruWMKfciQS7mXY5b_HniD8_P?usp=drive_link
 ## 6. Referências
 * Fedesoriano. (2021). Boston House Prices-Advanced Regression Techniques. Kaggle. https://www.kaggle.com/datasets/fedesoriano/the-boston-houseprice-data  
 * S. Puneeth, Md. Ammaar Quadri, M. Sahithi, Mohd. Arbas, & P.S. Jyothi. (2025). PREDICTING HOME PRICES: A BEGINNER’S JOURNEY WITH  REGRESSION ANALYSIS USING THE BOSTON HOUSING DATASET. Journal of Science Engineering Technology and Management Science , 02(06). https://www.jsetms.com/admin/uploads/Ugtw54.pdf
