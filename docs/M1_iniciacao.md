@@ -20,9 +20,9 @@ As perguntas de investigação estruturam o enquadramento científico do estudo,
    
 ## 3. Metodologia de Gestão (PBL)
 * **Divisão de Tarefas:**
- * **Diana Figueiredo:** Responsável pela Engenharia de Dados.
+ * **Diana Figueiredo:** Responsável pela Visualização e Documentação.
  * **Natacha Zhang:** Responsável pela Modelação Estatística.
- * **Sofia Tanganho:** Responsável pela Visualização e Documentação.
+ * **Sofia Tanganho:** Responsável pela Engenharia de Dados.
 * **Ferramentas de Colaboração:** GitHub, Kaggle para partilha de código, reuniões semanais via Discord.
   
 ## 4. Análise de Viabilidade dos Dados
