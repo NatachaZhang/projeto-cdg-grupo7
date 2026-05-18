@@ -25,8 +25,7 @@
 ## 4. Roadmap e Trabalhos Futuros
 1. **Melhoria Técnica:** A distribuição desigual entre os dois grupos de bairros reflete a realidade dos dados disponíveis. Uma análise mais equilibrada exigiria um conjunto de dados mais diversificado, com maior representação de zonas residenciais valorizadas.
 2. **Novas Variáveis:** Integrar informação adicional sobre cada zona, como proximidade a transportes públicos, escolas e espaços verdes, para tornar tanto a estimativa de preços como a classificação de bairros mais completa e representativa.
-3. **Escalabilidade (Deployment):** (Ex: "Desenvolver uma interface web (Streamlit) para que o
-modelo possa ser utilizado por utilizadores não-técnicos em tempo real.")
+3. **Escalabilidade (Deployment):** Integrar as duas ferramentas numa solução única, onde ao inserir as características de uma habitação o utilizador recebe simultaneamente a estimativa de preço e o perfil do bairro correspondente, tornando a análise mais completa e acessível a qualquer pessoa.
 ---
 **Data de Conclusão:** 18/05/2026
 **Versão do Projeto:** v4.0 Final--- 
