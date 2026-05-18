@@ -58,22 +58,22 @@ Após a criação de novos atributos procedeu-se ao escalonamento das novas vari
 ## 5. Conclusões da Fase de Exploração
 A fase de análise exploratória e engenharia de atributos foi conduzida de forma estruturada e coerente com o processo CRISP-DM, permitindo transformar o dataset de _Boston Housing_ num _input_ sólido e bem fundamentado para a fase de modelação.
 
-**Qualidade dos dados e robustez da base de partida**
+**Qualidade dos dados e robustez da base de partida**  
 A verificação sistemática de valores nulos e de duplicados confirmou a ausência de qualquer problema de completude ou redundância. Este resultado elimina a necessidade de imputação uma fonte frequente de enviesamento em modelos preditivos quando mal aplicada (Little & Rubin, 2002), permitindo-nos avançar diretamente para a análise exploratória.
 
-**Distribuição da variável alvo `MEDV` e implicações para a modelação**
+**Distribuição da variável alvo `MEDV` e implicações para a modelação**  
 A análise não se limitou ao histograma: calculámos as três medidas de tendência central (média = 22.53 > mediana = 21.20, com a moda deslocada para 50.000 dólares) e aplicámos o teste de _Kolmogorov-Smirnov_ (p-valor < 0.05), rejeitando formalmente a hipótese de normalidade de `MEDV`. A discrepância entre as três medidas confirma que a distribuição se afasta claramente da simetria característica de uma distribuição normal, o que poderá influenciar o desempenho do modelo de regressão linear.
 
-**Outliers: decisão de retenção fundamentada**
+**Outliers: decisão de retenção fundamentada**  
 A detecção sistemática por IQR identificou `B` (77 outliers), `ZN` (68) e `CRIM` (66) como as variáveis com maior concentração de valores atípicos. A análise dos _scatter plots_ segmentados por _outlier_ revelou padrões interpretáveis: os _outliers_ de `CRIM` concentram-se em valores baixos de `MEDV`, os de `RM` em valores altos, e os de `LSTAT` em valores baixos de `MEDV` mas altos de `LSTAT`. Concluímos que estes padrões não constituem erros de registo, mas sim reflexos de disparidades socioeconómicas reais, pelo que optámos pela sua retenção. A sua remoção eliminaria informação genuína sobre os extremos do mercado imobiliário.
 
-**Multicolinearidade: tratamento cirúrgico**
+**Multicolinearidade: tratamento cirúrgico**   
 A matriz de correlação identificou dois pares críticos: `RAD` e `TAX` com r = 0.91 e `NOX `e `DIS` com r = −0.77. Removemos `RAD` por apresentar uma correlação inferior com `MEDV` (r = −0.38) face a `TAX` (r = −0.47), mantendo a variável com maior poder preditivo. O par `NOX`e `DIS` foi resolvido indirectamente pela incorporação de `NOX` no `IQV` e de `DIS` no `IAH`, eliminando ambas as variáveis originais do conjunto de dados (_dataset_) final. Esta abordagem permitiu tratar a multicolinearidade sem perda de informação, transferindo-a para índices compostos.
 
-**Escalonamento diferenciado e coerente**
+**Escalonamento diferenciado e coerente**   
 Aplicámos StandardScaler às variáveis com _outliers_ (`CRIM`, `RM`, `LSTAT`, `DIS`, `PTRATIO`, `B`, `ZN`) e MinMaxScaler às restantes (`INDUS`, `NOX`, `AGE`, `RAD`, `TAX`). O _StandardScaler_ centra e escala pela variância, sendo mais robusto à presença de extremos; o _MinMaxScaler_ comprime para [0,1] e é adequado para distribuições mais uniformes (Géron, 2019). Esta distinção evita a aplicação cega de um único método e garante que o escalonamento respeita as características de cada variável.
 
-**Engenharia de atributos — IQV e IAH**
+**Engenharia de atributos — IQV e IAH**  
 Criámos duas novas variáveis para enriquecer a capacidade preditiva do modelo. O `IQV` foi construído por inversão e soma de `CRIM`, `NOX` e `PTRATIO`, garantindo que valores altos do índice correspondem a condições de vida favoráveis. A sua correlação com `MEDV` é moderada (r = 0.31), mas o índice agrega de forma coerente três variáveis com correlações individuais de −0.39 (`CRIM`), −0.43 (`NOX`) e −0.51 (`PTRATIO`), produzindo um indicador interpretável de qualidade urbana. O `IAH = RM / (LSTAT × DIS)` captura o rácio entre a atractividade física da habitação e a penalização socioeconómica e locacional, alinhando-se com a teoria de valor locacional em economia urbana (Alonso, 1964), obtendo uma correlação de 0.65 com `MEDV`. Este valor deve ser interpretado com cautela, dado que o índice incorpora `RM` (r = 0.70) e `LSTAT` (r = −0.74), variáveis que individualmente já apresentavam correlações elevadas com a variável alvo. Ambos os índices apresentam _outliers_ confirmados pelos _boxplots_, pelo que foram padronizados com _StandardScaler_, em coerência com as escolhas anteriores. O conjunto de dados  (_dataset_) final ficou com 9 variáveis preditoras e a variável alvo `MEDV`, exportado para `boston_processed.csv`.
 
 
