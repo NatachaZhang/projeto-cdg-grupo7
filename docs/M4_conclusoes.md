@@ -6,7 +6,7 @@ Através da utilização de Machine Learning, foi possível estimar preços de h
 O projeto demonstra como dados históricos podem ser transformados em informação útil para investidores, agentes imobiliários e entidades públicas.
 
 ## Problema SMART 1
-* **O Problema Resolvido:** O Objetivo 1 consistiu em criar um modelo capaz de estimar automaticamente o preço de uma habitação em Boston, com um nível de precisão previamente definido, até ao final do Milestone 3. Este objetivo foi parcialmente alcançado: o modelo atingiu o nível de precisão exigido em termos de capacidade explicativa, mas a margem de erro média ficou ligeiramente acima do pretendido, cerca de 3.594 dólares por estimativa, face ao objetivo de 3.500 dólares.
+* **O Problema Resolvido:** O Objetivo 1 consistiu em desenvolver um modelo capaz de estimar automaticamente o preço de uma habitação em Boston, com um nível de precisão previamente definido, até ao final do Milestone 3. Este objetivo foi maioritariamente alcançado: o modelo atingiu o nível de capacidade explicativa pretendido, embora a margem de erro média tenha ficado ligeiramente acima da meta inicialmente estabelecida, registando cerca de 3.594 dólares por estimativa face ao objetivo de 3.500 dólares.
 
 * **Interpretação dos Resultados:** O modelo revelou elevada capacidade de previsão, conseguindo explicar aproximadamente 83% da variação dos preços das habitações. Contudo, o RMSE de 3.594 dólares, significa que, em média, as previsões do modelo erram cerca de 3.594 dólares face ao preço real das habitações.
 
