@@ -1,16 +1,24 @@
 # Relatório de Conclusão e Entrega de Valor (Milestone 4)
 ## 1. Síntese de Resultados e Impacto
+
+Este projeto teve como objetivo aplicar técnicas de Ciência de Dados ao mercado imobiliário de Boston, combinando modelos preditivos e técnicas de segmentação para apoiar decisões de compra, venda e análise urbana.
+Através da utilização de Machine Learning, foi possível estimar preços de habitações com elevada capacidade explicativa e identificar diferentes perfis de bairros com base em características socioeconómicas e ambientais.
+O projeto demonstra como dados históricos podem ser transformados em informação útil para investidores, agentes imobiliários e entidades públicas.
+
 ## Problema SMART 1
 * **O Problema Resolvido:** O Objetivo 1 consistiu em criar um modelo capaz de estimar automaticamente o preço de uma habitação em Boston, com um nível de precisão previamente definido, até ao final do Milestone 3. Este objetivo foi parcialmente alcançado: o modelo atingiu o nível de precisão exigido em termos de capacidade explicativa, mas a margem de erro média ficou ligeiramente acima do pretendido, cerca de 3.594 dólares por estimativa, face ao objetivo de 3.500 dólares.
 
-* **Interpretação dos Resultados:** O modelo demostra uma boa capacidade explicativa, pois consegue explicar 82.7% da variação do preço médio das casas. Contudo, o RMSE de 3.594 dólares, significa que, em média, as previsões do modelo erram cerca de 3.594 dólares face ao preço real das habitações.
+* **Interpretação dos Resultados:** O modelo revelou elevada capacidade de previsão, conseguindo explicar aproximadamente 83% da variação dos preços das habitações. Contudo, o RMSE de 3.594 dólares, significa que, em média, as previsões do modelo erram cerca de 3.594 dólares face ao preço real das habitações.
 
 * **Valor para o Utilizador/Negócio:** Com esta solução, agentes imobiliários, investidores e avaliadores podem obter uma estimativa automatizada e fundamentada do preço de uma habitação, com base em diversas características da habitação. Isto permite agilizar avaliações, identificar habitações subvalorizadas no mercado e apoiar decisões de compra ou venda com maior rigor quantitativo.
 
 ### Problema SMART 2
 * **O Problema Resolvido:** O Objetivo 2 consistiu em segmentar os habitações de Boston em perfis distintos, com base nas suas características socioeconómicas, habitacionais e ambientais, atingindo um nível mínimo de separação entre grupos até ao final do Milestone 3. Este objetivo foi integralmente alcançado, com uma separação entre grupos muito superior ao mínimo.
+  
 * **Interpretação dos Resultados:** A análise identificou dois perfis de bairros claramente distintos. O primeiro, denominado "Zona Urbana Desvalorizada", engloba a grande maioria dos bairros (487 em 506), caracterizados por habitações mais antigas, maior presença industrial e menor qualidade de vida. O segundo, denominado "Zona Residencial Valorizada", é composto por apenas 19 em 506 habitações, com habitações mais recentes, zonas mais amplas, menos industrialização e melhor qualidade de vida.
+
 * **Valor para o Utilizador/Negócio:**  Esta segmentação permite perceber, de forma simples e automática, em que tipo de bairro se insere uma habitação. Para um comprador, ajuda a perceber se está a adquirir uma casa numa zona mais valorizada ou numa zona com menor qualidade de vida. Para um investidor, permite identificar zonas com potencial de valorização. Para um município, apoia a definição de prioridades em políticas de habitação e requalificação urbana, direcionando recursos para as zonas que mais necessitam de intervenção.
+
 ## 2. Análise Crítica e Limitações
 * **Limitações dos Dados:** *  O conjunto de dados (_dataset_) é composto por apenas 506 observações recolhidas em 1978, o que limita a representatividade dos dados face ao mercado imobiliário atual.
 ### Problema 1:
